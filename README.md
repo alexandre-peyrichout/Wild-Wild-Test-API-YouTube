@@ -1,68 +1,78 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react-youtube [![Build Status](https://travis-ci.org/troybetz/react-youtube.svg?branch=master)](https://travis-ci.org/troybetz/react-youtube)
 
-## Available Scripts
+Simple [React](http://facebook.github.io/react/) component acting as a thin layer over the [YouTube IFrame Player API](https://developers.google.com/youtube/iframe_api_reference)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- url playback
+- [playback event bindings](https://developers.google.com/youtube/iframe_api_reference#Events)
+- [customizable player options](https://developers.google.com/youtube/player_parameters)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```
+$ npm install react-youtube
+```
 
-### `npm test`
+## Usage
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```js
+<YouTube
+  videoId={string} // defaults -> null
+  id={string} // defaults -> null
+  className={string} // defaults -> null
+  containerClassName={string} // defaults -> ''
+  opts={obj} // defaults -> {}
+  onReady={func} // defaults -> noop
+  onPlay={func} // defaults -> noop
+  onPause={func} // defaults -> noop
+  onEnd={func} // defaults -> noop
+  onError={func} // defaults -> noop
+  onStateChange={func} // defaults -> noop
+  onPlaybackRateChange={func} // defaults -> noop
+  onPlaybackQualityChange={func} // defaults -> noop
+/>
+```
 
-### `npm run build`
+For convenience it is also possible to access the PlayerState constants through react-youtube:
+`YouTube.PlayerState` contains the values that are used by the [YouTube IFrame Player API](https://developers.google.com/youtube/iframe_api_reference#onStateChange).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Example
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```js
+import React from 'react';
+import YouTube from 'react-youtube';
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+class Example extends React.Component {
+  render() {
+    const opts = {
+      height: '390',
+      width: '640',
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 1
+      }
+    };
 
-### `npm run eject`
+    return <YouTube videoId="2g811Eo7K8U" opts={opts} onReady={this._onReady} />;
+  }
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  _onReady(event) {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
+  }
+}
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Controlling the player
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+You can access & control the player in a way similar to the [official api](https://developers.google.com/youtube/iframe_api_reference#Events):
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> The ~~API~~ _component_ will pass an event object as the sole argument to each of ~~those functions~~ _the event handler props_. The event object has the following properties:
 
-## Learn More
+> - The event's `target` identifies the video player that corresponds to the event.
+> - The event's `data` specifies a value relevant to the event. Note that the `onReady` event does not specify a `data` property.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+MIT
