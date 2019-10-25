@@ -41,6 +41,10 @@ class App extends React.Component {
   changeSong(video) {
     this.setState({ videoId: video });
   }
+  _onReady(event) {
+    // access to player in all event handlers via event.target
+    event.target.setVolume(100);
+  }
 }
 
 export default App;
