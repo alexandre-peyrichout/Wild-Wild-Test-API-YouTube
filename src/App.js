@@ -1,28 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Youtube from 'react-youtube';
+import YouTube from 'react-youtube';
+import Countdown from 'react-countdown-now';
 
-function App() {
-  return (
-    <div className="App">
-      <Youtube videoId="ZyhrYis509A" />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      videoId: '',
+      opts: {
+        playerVars: {
+          autoplay: 1,
+          enablejsapi: 1,
+          origin: 'http://localhost:3000'
+        }
+      }
+    };
+    this.changeSong = this.changeSong.bind(this);
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <div className="App-header">
+          <YouTube className="yt-hidden" videoId={this.state.videoId} opts={this.state.opts} />
+          <button onClick={() => this.changeSong('KR1Uy47KdF4')}>Titanic</button>
+          <button onClick={() => this.changeSong('jRP5mpZVmN8')}>Friends</button>
+          <button onClick={() => this.changeSong('jVm1NbrXaXc')}>Pokémon</button>
+          <Countdown date={Date.now() + 45000} renderer={props => <div>{props.seconds}</div>} />
+        </div>
+      </div>
+    );
+  }
+
+  changeSong(video) {
+    this.setState({ videoId: video });
+  }
 }
 
 export default App;
