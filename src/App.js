@@ -23,7 +23,12 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="App-header">
-          <YouTube className="yt-hidden" videoId={this.state.videoId} opts={this.state.opts} />
+          <YouTube
+            className="yt-hidden"
+            videoId={this.state.videoId}
+            opts={this.state.opts}
+            onReady={this._onReady}
+          />
           <button onClick={() => this.changeSong('KR1Uy47KdF4')}>Titanic</button>
           <button onClick={() => this.changeSong('jRP5mpZVmN8')}>Friends</button>
           <button onClick={() => this.changeSong('jVm1NbrXaXc')}>Pokémon</button>
