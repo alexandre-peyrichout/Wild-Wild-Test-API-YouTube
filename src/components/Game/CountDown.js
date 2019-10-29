@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import Countdown from 'react-countdown-now';
 
-class Countdown extends Component {
+class CountDown extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -10,4 +11,4 @@ class Countdown extends Component {
   }
 }
 
-export default Countdown;
+export default CountDown;

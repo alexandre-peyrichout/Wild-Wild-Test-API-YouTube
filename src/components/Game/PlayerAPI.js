@@ -1,6 +1,5 @@
 import React from 'react';
 import YouTube from 'react-youtube';
-import Countdown from 'react-countdown-now';
 
 class PlayerAPI extends React.Component {
   constructor(props) {
@@ -30,7 +29,6 @@ class PlayerAPI extends React.Component {
         <button onClick={() => this.changeSong('KR1Uy47KdF4')}>Titanic</button>
         <button onClick={() => this.changeSong('jRP5mpZVmN8')}>Friends</button>
         <button onClick={() => this.changeSong('jVm1NbrXaXc')}>Pokémon</button>
-        <Countdown date={Date.now() + 45000} renderer={props => <div>{props.seconds}</div>} />
       </div>
     );
   }
