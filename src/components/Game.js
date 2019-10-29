@@ -15,11 +15,12 @@ class Game extends React.Component {
           src="https://thumbs.gfycat.com/PalatableFelineDipper-size_restricted.gif"
         />
         <CountDown />
-        <Score />
+
         <PlayerAPI />
         <Answer />
         <ValidateBtn />
         <SkipBtn />
+        <Score />
       </div>
     );
   }
