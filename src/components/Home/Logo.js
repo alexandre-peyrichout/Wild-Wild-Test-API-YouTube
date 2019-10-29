@@ -5,7 +5,6 @@ export default ()=>{
 
     return(
         <div className="logo">
-            
             <img src={Logo} alt="Logo"></img>
         </div>
     )
