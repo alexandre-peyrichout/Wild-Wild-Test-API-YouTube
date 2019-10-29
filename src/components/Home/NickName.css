@@ -1,0 +1,17 @@
+form,
+.nickName {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.nickName .length-ok {
+  border: 1px solid #9ae6b4;
+}
+
+.nickName .length-maximum-reached {
+  border: 1px solid #fc8181;
+}
