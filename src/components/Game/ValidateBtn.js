@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ValidateBtn = () => {
-  return <button>Validate</button>;
+  return <button>Valider</button>;
 };
 
 export default ValidateBtn;
