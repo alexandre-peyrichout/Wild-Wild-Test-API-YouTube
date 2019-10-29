@@ -5,6 +5,8 @@ class PlayerAPI extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      height: '3',
+      width: '3',
       videoId: '',
       opts: {
         playerVars: {
@@ -22,13 +24,14 @@ class PlayerAPI extends React.Component {
       <div>
         <YouTube
           className="yt-hidden"
+          height={this.state.height}
+          width={this.state.width}
           videoId={this.state.videoId}
           opts={this.state.opts}
           onReady={this._onReady}
         />
-        <button onClick={() => this.changeSong('KR1Uy47KdF4')}>Titanic</button>
-        <button onClick={() => this.changeSong('jRP5mpZVmN8')}>Friends</button>
-        <button onClick={() => this.changeSong('jVm1NbrXaXc')}>Pokémon</button>
+
+        <button onClick={() => this.changeSong('jRP5mpZVmN8')}>Play a song</button>
       </div>
     );
   }
