@@ -1,17 +1,18 @@
-form,
-.nickName {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
-}
-
-.nickName .length-ok {
-  border: 1px solid #9ae6b4;
-}
-
-.nickName .length-maximum-reached {
-  border: 1px solid #fc8181;
-}
+input[type='text'] {
+  width: 100%;
+  height: 30px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  background: none;
+  font-size: 20px;
+ }
+ form {
+  width: 300px;
+ }
+ .pickUpNickname {
+  text-align: center;
+  font-size: 30px;
+ }
