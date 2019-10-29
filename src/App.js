@@ -1,49 +1,43 @@
 import React from 'react';
 import './App.css';
-import YouTube from 'react-youtube';
-import Countdown from 'react-countdown-now';
+
+import { Switch, Route } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+import Home from './components/Home';
+import Game from './components/Game';
+import Contact from './components/Contact';
+import Legal from './components/Legal';
+import Rules from './components/Rules';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      videoId: '',
-      opts: {
-        playerVars: {
-          autoplay: 1,
-          enablejsapi: 1,
-          origin: 'http://localhost:3000'
-        }
-      }
-    };
-    this.changeSong = this.changeSong.bind(this);
-  }
-
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <YouTube
-            className="yt-hidden"
-            videoId={this.state.videoId}
-            opts={this.state.opts}
-            onReady={this._onReady}
-          />
-          <button onClick={() => this.changeSong('KR1Uy47KdF4')}>Titanic</button>
-          <button onClick={() => this.changeSong('jRP5mpZVmN8')}>Friends</button>
-          <button onClick={() => this.changeSong('jVm1NbrXaXc')}>Pokémon</button>
-          <Countdown date={Date.now() + 45000} renderer={props => <div>{props.seconds}</div>} />
-        </div>
+        <NavLink activeClassName="active" exact to="/">
+          Home
+        </NavLink>
+        <NavLink activeClassName="active" to="/Game">
+          Game
+        </NavLink>
+        <NavLink activeClassName="active" to="/Contact">
+          Contact
+        </NavLink>
+        <NavLink activeClassName="active" to="/Legal">
+          Legal
+        </NavLink>
+        <NavLink activeClassName="active" to="/Rules">
+          Rules
+        </NavLink>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/Game" component={Game} />
+          <Route exact path="/Contact" component={Contact} />
+          <Route exact path="/Legal" component={Legal} />
+          <Route exact path="/Rules" component={Rules} />
+        </Switch>
       </div>
     );
-  }
-
-  changeSong(video) {
-    this.setState({ videoId: video });
-  }
-  _onReady(event) {
-    // access to player in all event handlers via event.target
-    event.target.setVolume(100);
   }
 }
 
