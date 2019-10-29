@@ -1,7 +1,6 @@
 import React from 'react';
-import PlayerAPI from './PlayerAPI';
 
-class CountDown extends PlayerAPI {
+class CountDown extends React.Component {
   constructor(props) {
     super(props);
     this.startCount = false;
@@ -20,7 +19,9 @@ class CountDown extends PlayerAPI {
 
   tick() {
     this.props.startCount
-      ? this.setState({ number: this.state.number - 1 })
+      ? this.state.number <= 0
+        ? this.setState({ number: this.state.number })
+        : this.setState({ number: this.state.number - 1 })
       : this.setState({ number: this.state.number });
   }
 

@@ -50,6 +50,12 @@ class Game extends React.Component {
           src="https://thumbs.gfycat.com/PalatableFelineDipper-size_restricted.gif"
         />
 
+        <CountDown startCount={this.state.isPlaying} />
+        <button onClick={() => this.changeSong('JvKoBnv96PM')}>Play a song</button>
+        <Answer />
+        <ValidateBtn />
+        <SkipBtn />
+        <Score />
         <div>
           <YouTube
             className="yt-hidden"
@@ -60,15 +66,7 @@ class Game extends React.Component {
             onReady={this._onReady}
             onPlay={this._onPlay}
           />
-
-          <button onClick={() => this.changeSong('JvKoBnv96PM')}>Play a song</button>
         </div>
-
-        <CountDown startCount={this.state.isPlaying} />
-        <Answer />
-        <ValidateBtn />
-        <SkipBtn />
-        <Score />
       </div>
     );
   }
