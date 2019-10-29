@@ -19,7 +19,7 @@ class Game extends React.Component {
       opts: {
         playerVars: {
           autoplay: 1,
-          start: 13,
+          start: 0,
           enablejsapi: 1,
           origin: 'http://localhost:3000'
         }
@@ -51,7 +51,7 @@ class Game extends React.Component {
         />
 
         <CountDown startCount={this.state.isPlaying} />
-        <button onClick={() => this.changeSong('JvKoBnv96PM')}>Play a song</button>
+        <button onClick={() => this.changeSong('OS6ioiNFmkk')}>Play a song</button>
         <Answer />
         <ValidateBtn />
         <SkipBtn />
