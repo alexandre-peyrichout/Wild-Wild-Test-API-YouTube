@@ -26,9 +26,9 @@ class PlayerAPI extends React.Component {
           opts={this.state.opts}
           onReady={this._onReady}
         />
-        {/* <button onClick={() => this.changeSong('KR1Uy47KdF4')}>Titanic</button>
+        <button onClick={() => this.changeSong('KR1Uy47KdF4')}>Titanic</button>
         <button onClick={() => this.changeSong('jRP5mpZVmN8')}>Friends</button>
-        <button onClick={() => this.changeSong('jVm1NbrXaXc')}>Pokémon</button> */}
+        <button onClick={() => this.changeSong('jVm1NbrXaXc')}>Pokémon</button>
       </div>
     );
   }
