@@ -1,10 +1,17 @@
 import React from 'react';
+import Title from './Home/Title';
+import Logo from './Home/Logo';
+import PlayBtn from './Home/PlayBtn';
+import NickName from './Home/NickName';
 
 class Home extends React.Component {
   render() {
     return (
       <div>
-        <img alt="placeholder" src="https://la-bas.org/IMG/arton5412.gif?1548418135" />
+        <Title />
+        <Logo />
+        <NickName />
+        <PlayBtn />
       </div>
     );
   }
