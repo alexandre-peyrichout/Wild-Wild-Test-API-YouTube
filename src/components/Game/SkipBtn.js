@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SkipBtn = () => {
-  return <button>Skip</button>;
+  return <button>Je passe</button>;
 };
 
 export default SkipBtn;

@@ -6,7 +6,7 @@ class Score extends Component {
     this.state = { score: 0 };
   }
   render() {
-    return <div>{this.state.score}</div>;
+    return <div>Score: {this.state.score}</div>;
   }
 }
 
