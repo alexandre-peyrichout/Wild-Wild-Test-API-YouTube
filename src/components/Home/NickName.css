@@ -1,18 +1,21 @@
-input[type='text'] {
-  width: 100%;
-  height: 30px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 2px solid black;
-  background: none;
-  font-size: 20px;
- }
- form {
-  width: 300px;
- }
- .pickUpNickname {
-  text-align: center;
-  font-size: 30px;
- }
+form,
+.nickName {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  font-family: 'Varela Round', regular;
+}
+.nickName .length-ok {
+  border-color: #9ae6b4;
+  border-style: dashed;
+  border-width: 0px 0px 4px 0px;
+}
+
+.nickName .length-maximum-reached {
+  border-color: #fc8181;
+  border-style: dashed;
+  border-width: 0px 0px 4px 0px;
+}
