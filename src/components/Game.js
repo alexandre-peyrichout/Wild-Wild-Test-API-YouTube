@@ -39,7 +39,7 @@ class Game extends React.Component {
   }
 
   _onPlay() {
-    this.setState({ isPlaying: true });
+    this.setState({ isPlaying: true }); // quand la musique commence, le state booléen isPlaying devient true
   }
 
   render() {
@@ -49,8 +49,8 @@ class Game extends React.Component {
           alt="placeholder"
           src="https://thumbs.gfycat.com/PalatableFelineDipper-size_restricted.gif"
         />
-
-        <CountDown startCount={this.state.isPlaying} />
+        <CountDown startCount={this.state.isPlaying} />{' '}
+        {/*définir la props startCount selon le state isPlaying*/}
         <button onClick={() => this.changeSong('OS6ioiNFmkk')}>Play a song</button>
         <Answer />
         <ValidateBtn />

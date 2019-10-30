@@ -5,24 +5,24 @@ class CountDown extends React.Component {
     super(props);
     this.startCount = false;
     this.state = {
-      number: 30
+      number: 30 // nombre du compteur en secondes
     };
   }
 
   componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 1000);
+    this.timerID = setInterval(() => this.tick(), 1000); // effectue tick() toutes les 1000 millisecondes
   }
 
   componentWillUnmount() {
-    clearInterval(this.timerID);
+    clearInterval(this.timerID); // jsp vraiment mais apparemment faut le garder dans l'exemple de l'horloge que j'ai cannibalisé
   }
 
   tick() {
-    this.props.startCount
-      ? this.state.number <= 0
-        ? this.setState({ number: this.state.number })
-        : this.setState({ number: this.state.number - 1 })
-      : this.setState({ number: this.state.number });
+    this.props.startCount // si le props startCount défini dans Game.js...
+      ? this.state.number <= 0 // true : si le state number est inférieur ou égal à 0...
+        ? this.setState({ number: this.state.number }) // true : ne pas toucher
+        : this.setState({ number: this.state.number - 1 }) // false : nombre - 1
+      : this.setState({ number: this.state.number }); // false : ne pas toucher
   }
 
   render() {
