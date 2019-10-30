@@ -1,7 +1,7 @@
 import React from 'react';
 import './NickName.css';
 
-const MAX_LENGTH = 30;
+const MAX_LENGTH = 10;
 
 export default class NickName extends React.Component {
   constructor(props) {

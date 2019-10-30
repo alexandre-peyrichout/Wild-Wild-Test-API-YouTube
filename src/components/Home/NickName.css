@@ -6,12 +6,16 @@ form,
   justify-content: center;
   align-items: center;
   align-content: stretch;
+  font-family: 'Varela Round', regular;
 }
-
 .nickName .length-ok {
-  border: 1px solid #9ae6b4;
+  border-color: #9ae6b4;
+  border-style: dashed;
+  border-width: 0px 0px 4px 0px;
 }
 
 .nickName .length-maximum-reached {
-  border: 1px solid #fc8181;
+  border-color: #fc8181;
+  border-style: dashed;
+  border-width: 0px 0px 4px 0px;
 }
