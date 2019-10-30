@@ -1,26 +1,34 @@
 import React, { Component } from 'react';
 import './NickName.css';
-class NickName extends React.Component {
- constructor(props) {
-   super(props);
-   this.state = {
-     username: ''
-   };
-   this.handleChange = this.handleChange.bind(this);
- }
- handleChange(event) {
-   this.setState({ username: event.target.value });
- }
- handleSubmit(event) {
-   event.preventDefault();
- }
- render() {
-   return (
-     <form onSubmit={this.handleSubmit}>
-       <p className="pickUpNickname">Choisis un pseudo :</p>
-       <input type="text" name="username" onChange={this.handleChange} />
-     </form>
-   );
- }
-}
-export default NickName;
+
+const MAX_LENGTH = 10;
+
+export default class NickName extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: '' };
+  }
+
+  handleChange = event => {
+    event.target.value.length <= MAX_LENGTH && this.setState({ name: event.target.value });
+  };
+
+  render() {
+    let max = this.state.name.length >= MAX_LENGTH;
+    return (
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <label className="nickName">
+            Pick-up a name !
+            <input
+              type="text"
+              id="name"
+              onChange={this.handleChange}
+              className={max ? 'length-maximum-reached' : 'length-ok'}
+            />
+          </label>
+          {/* <input type="submit" value="Envoyer" /> */}
+        </form>
+      </div>
+    );
+  }
