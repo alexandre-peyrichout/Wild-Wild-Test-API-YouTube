@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './NickName.css';
 
 const MAX_LENGTH = 10;
@@ -32,4 +32,3 @@ export default class NickName extends React.Component {
       </div>
     );
   }
-}
