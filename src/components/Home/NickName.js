@@ -32,3 +32,4 @@ export default class NickName extends React.Component {
       </div>
     );
   }
+}
