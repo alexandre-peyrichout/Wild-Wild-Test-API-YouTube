@@ -27,7 +27,7 @@ class CountDown extends React.Component {
 
   render() {
     return (
-      <div className="count-logo-back" id="countdown-number">
+      <div className={this.props.className} id="countdown-number">
         {this.state.number}
       </div>
     );

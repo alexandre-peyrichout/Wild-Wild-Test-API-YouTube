@@ -13,8 +13,10 @@ class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      start_style: 'ready',
+      start_value: 'Start',
       isPlaying: false,
-
+      classCount: 'default',
       height: '3',
       width: '3',
       videoId: '',
@@ -32,7 +34,12 @@ class Game extends React.Component {
   }
 
   changeSong(video) {
-    this.setState({ videoId: video });
+    this.setState({
+      videoId: video,
+      classCount: 'loading',
+      start_style: 'loading-btn',
+      start_value: ''
+    });
   }
 
   _onReady(event) {
@@ -41,17 +48,22 @@ class Game extends React.Component {
   }
 
   _onPlay() {
-    this.setState({ isPlaying: true }); // quand la musique commence, le state booléen isPlaying devient true
+    this.setState({
+      isPlaying: true,
+      classCount: 'default',
+      start_style: 'ready',
+      start_value: 'Good Luck !'
+    }); // quand la musique commence, le state booléen isPlaying devient true
   }
 
   render() {
     return (
       <div className="game-parent">
         <Title />
-        <CountDown startCount={this.state.isPlaying} />
+        <CountDown className={this.state.classCount} startCount={this.state.isPlaying} />
         {/*définir la props startCount selon le state isPlaying*/}
-        <button className="play-button" onClick={() => this.changeSong('OS6ioiNFmkk')}>
-          Play a song
+        <button className={this.state.start_style} onClick={() => this.changeSong('OS6ioiNFmkk')}>
+          {this.state.start_value}
         </button>
         <Answer />
         <div>
