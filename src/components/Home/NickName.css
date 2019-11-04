@@ -8,6 +8,9 @@ form,
   align-content: stretch;
   font-family: 'Varela Round', regular;
 }
+#name {
+  background: transparent;
+}
 .nickName .length-ok {
   border-color: #9ae6b4;
   border-style: dashed;
