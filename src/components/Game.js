@@ -6,6 +6,8 @@ import Score from './Game/Score';
 import SkipBtn from './Game/SkipBtn';
 import Answer from './Game/Answer';
 import ValidateBtn from './Game/ValidateBtn';
+import './Game.css';
+import Title from './Home/Title';
 
 class Game extends React.Component {
   constructor(props) {
@@ -44,29 +46,29 @@ class Game extends React.Component {
 
   render() {
     return (
-      <div>
-        <img
-          alt="placeholder"
-          src="https://thumbs.gfycat.com/PalatableFelineDipper-size_restricted.gif"
-        />
-        <CountDown startCount={this.state.isPlaying} />{' '}
+      <div className="game-parent">
+        <Title />
+        <CountDown startCount={this.state.isPlaying} />
         {/*définir la props startCount selon le state isPlaying*/}
-        <button onClick={() => this.changeSong('OS6ioiNFmkk')}>Play a song</button>
+        <button className="play-button" onClick={() => this.changeSong('OS6ioiNFmkk')}>
+          Play a song
+        </button>
         <Answer />
-        <ValidateBtn />
-        <SkipBtn />
-        <Score />
         <div>
-          <YouTube
-            className="yt-hidden"
-            height={this.state.height}
-            width={this.state.width}
-            videoId={this.state.videoId}
-            opts={this.state.opts}
-            onReady={this._onReady}
-            onPlay={this._onPlay}
-          />
+          <SkipBtn />
+          <ValidateBtn />
         </div>
+        <p className="nick">Nickname</p>
+        <Score />
+        <YouTube
+          className="yt-hidden"
+          height={this.state.height}
+          width={this.state.width}
+          videoId={this.state.videoId}
+          opts={this.state.opts}
+          onReady={this._onReady}
+          onPlay={this._onPlay}
+        />
       </div>
     );
   }

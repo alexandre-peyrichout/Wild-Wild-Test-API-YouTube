@@ -26,7 +26,11 @@ class CountDown extends React.Component {
   }
 
   render() {
-    return <div id="countdown-number">{this.state.number}</div>;
+    return (
+      <div className="count-logo-back" id="countdown-number">
+        {this.state.number}
+      </div>
+    );
   }
 }
 

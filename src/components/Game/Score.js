@@ -1,13 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
+import './Score.css';
 
-class Score extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { score: 0 };
-  }
-  render() {
-    return <div>Score: {this.state.score}</div>;
-  }
-}
+const Score = () => {
+  return <p className="score">Score:</p>;
+};
 
 export default Score;
