@@ -97,28 +97,62 @@
 }
 
 .default,
-.loading {
+.loading,
+.playing {
   display: flex;
   background-image: url(../assets/img/logo_blur.png);
   background-size: cover;
-  width: calc(200px + 4vw);
-  height: calc(200px + 4vw);
-  margin-left: auto;
-  margin-right: auto;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+
   justify-content: center;
   align-items: center;
-  font-size: calc(5rem + 2vw);
   color: white;
   border-radius: 50%;
   border: solid 2px white;
-  text-shadow: 0 0 3px darkslategray, 0 0 5px burlywood;
+  position: relative;
+  z-index: 1;
+}
+
+.default:hover {
+  cursor: pointer;
+}
+
+.default,
+.playing {
+  font-size: calc(5rem + 2vw);
+}
+
+.playing {
+  animation: playing linear 30s forwards;
+}
+
+.default {
+  animation: pressGO 0.5s infinite alternate-reverse;
 }
 
 .loading {
-  animation: loading 0.5s infinite alternate-reverse;
+  font-size: calc(2rem + 2vw);
 }
 
-@keyframes loading {
+@keyframes playing {
+  from {
+    border: solid 2px white;
+    color: white;
+  }
+
+  to {
+    /* border: solid calc(100px + 2vw) black; */
+    color: red;
+    font-size: 0px;
+    width: 0%;
+    height: 0%;
+    border: 0;
+  }
+}
+
+@keyframes pressGO {
   from {
     transform: scale(1);
   }
@@ -135,5 +169,41 @@
 
   to {
     transform: rotate(2160deg);
+  }
+}
+
+.fake-div-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: calc(200px + 4vw);
+  height: calc(200px + 4vw);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fake-div,
+.fake-div-loading {
+  position: absolute;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.fake-div-loading {
+  animation: shadowaround 10s linear infinite;
+  box-shadow: 10px 5px 10px beige;
+}
+
+@keyframes shadowaround {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(4320deg);
   }
 }
