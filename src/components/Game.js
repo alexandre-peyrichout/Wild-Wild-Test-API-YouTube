@@ -13,12 +13,10 @@ class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      start_style: 'ready',
-      start_value: 'Start',
+      fakeDiv: 'fake-div',
+      numberCount: 'Go',
       isPlaying: false,
       classCount: 'default',
-      height: '3',
-      width: '3',
       videoId: '',
       opts: {
         playerVars: {
@@ -34,12 +32,14 @@ class Game extends React.Component {
   }
 
   changeSong(video) {
-    this.setState({
-      videoId: video,
-      classCount: 'loading',
-      start_style: 'loading-btn',
-      start_value: ''
-    });
+    this.state.numberCount === 'Go'
+      ? this.setState({
+          fakeDiv: 'fake-div-loading',
+          numberCount: 'Loading',
+          videoId: video,
+          classCount: 'loading'
+        })
+      : console.log('anti click');
   }
 
   _onReady(event) {
@@ -48,23 +48,46 @@ class Game extends React.Component {
   }
 
   _onPlay() {
+    console.log('playing');
     this.setState({
+      fakeDiv: 'fake-div',
+      numberCount: 30,
       isPlaying: true,
-      classCount: 'default',
-      start_style: 'ready',
-      start_value: 'Good Luck !'
-    }); // quand la musique commence, le state booléen isPlaying devient true
+      classCount: 'playing'
+    });
+    this.tick(); // quand la musique commence, le state booléen isPlaying devient true
+  }
+
+  componentDidMount() {
+    this.timerID = setInterval(() => this.tick(), 1000); // effectue tick() toutes les 1000 millisecondes
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID); // jsp vraiment mais apparemment faut le garder dans l'exemple de l'horloge que j'ai cannibalisé
+  }
+
+  tick() {
+    this.state.isPlaying // si le props startCount défini dans Game.js...
+      ? this.state.numberCount <= 0 // true : si le state number est inférieur ou égal à 0...
+        ? this.setState({ numberCount: this.state.numberCount }) // true : ne pas toucher
+        : this.setState({ numberCount: this.state.numberCount - 1 }) // false : nombre - 1
+      : this.setState({ numberCount: this.state.numberCount }); // false : ne pas toucher
   }
 
   render() {
     return (
       <div className="game-parent">
         <Title />
-        <CountDown className={this.state.classCount} startCount={this.state.isPlaying} />
-        {/*définir la props startCount selon le state isPlaying*/}
-        <button className={this.state.start_style} onClick={() => this.changeSong('OS6ioiNFmkk')}>
-          {this.state.start_value}
-        </button>
+        <div className="fake-div-parent">
+          {/*fake divs importantes pour l'anim du loading*/}
+          <div className={this.state.fakeDiv}></div>
+          <CountDown
+            onClick={() => this.changeSong('OS6ioiNFmkk')}
+            className={this.state.classCount}
+            number={this.state.numberCount}
+          />
+        </div>
+
         <Answer />
         <div>
           <SkipBtn />
@@ -74,8 +97,6 @@ class Game extends React.Component {
         <Score />
         <YouTube
           className="yt-hidden"
-          height={this.state.height}
-          width={this.state.width}
           videoId={this.state.videoId}
           opts={this.state.opts}
           onReady={this._onReady}
