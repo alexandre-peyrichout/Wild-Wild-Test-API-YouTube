@@ -1,33 +1,32 @@
 import React, { Component } from 'react';
+import Select from 'react-select';
 import './ChooseTheme.css';
-class ChooseTheme extends React.Component {
- constructor(props) {
-   super(props);
-   this.state = { value: 'themes' };
-   this.handleChange = this.handleChange.bind(this);
-   this.handleSubmit = this.handleSubmit.bind(this);
- }
- handleChange(event) {
-   this.setState({ value: event.target.value });
- }
- handleSubmit(event) {
-   event.preventDefault();
- }
- render() {
-   return (
-     <div class="box" onSubmit={this.handleSubmit}>
-       <select value={this.state.value} onChange={this.handleChange}>>
-         <option hidden selected>
-           Choisis ton thème !{' '}
-         </option>
-         <option>Wild Rock</option>
-         <option>Tekno</option>
-         <option>Zouk</option>
-         <option>Macarena</option>
-         <option>Tektonik</option>
-       </select>
-     </div>
-   );
- }
-}
-export default ChooseTheme;
+
+const options = [
+  { value: 'tekno', label: 'TEKNO BOOM BOOM' },
+  { value: 'teenmovies', label: 'TEEN MOVIES' },
+  { value: 'scarymovies', label: 'SCARY MOVIES' },
+  { value: 'wildwildwest', label: 'WILD WILD WEST' },
+  { value: 'geekmusics', label: 'GEEK MUSICS' }
+];
+
+//const ChooseTheme = () => <Select options={options} styles={colourStyles} />;
+
+export default () => (
+  <Select
+    className="chooseTheme"
+    options={options}
+    defaultValue={options}
+    label="Single select"
+    options={options}
+    theme={theme => ({
+      ...theme,
+      borderRadius: 15,
+      colors: {
+        ...theme.colors,
+        primary25: '#62F6B4',
+        primary: 'black'
+      }
+    })}
+  />
+);
