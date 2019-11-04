@@ -20,7 +20,7 @@ export default class NickName extends React.Component {
     console.log('test');
     console.log(this.state.name);
     const newNameValidate = !this.state.nameValidate;
-    this.state.name != '' && this.setState({ nameValidate: newNameValidate });
+    this.state.name !== '' && this.setState({ nameValidate: newNameValidate });
   };
 
   render() {

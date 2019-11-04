@@ -21,8 +21,8 @@
 }
 
 .play-button {
-  color: blue;
-  border: solid 2px blue;
+  color: teal;
+  border: solid 2px teal;
   background-color: black;
   border-radius: 20px;
   padding: 10px;
@@ -75,4 +75,5 @@
   color: white;
   border-radius: 50%;
   border: solid 2px white;
+  text-shadow: 0 0 3px darkblue, 0 0 5px burlywood;
 }
