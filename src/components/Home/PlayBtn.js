@@ -11,7 +11,7 @@ export default class PlayBtn extends React.Component {
   render() {
     return (
       <div className="playBtn">
-        <NavLink activeClassName="active" to="/Game">
+        <NavLink activeClassName="active" className="bam" to="/Game">
           <div className="swal2-success-line-tip"></div>
           <div className="swal2-success-line-long"></div>
         </NavLink>

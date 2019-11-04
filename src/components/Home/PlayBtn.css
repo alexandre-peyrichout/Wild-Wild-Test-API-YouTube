@@ -31,3 +31,10 @@
   border-radius: 0.125em;
   background-color: #2bb542;
 }
+
+.bam {
+  width: 65px;
+  height: 65px;
+  display: block;
+  border-radius: 50%;
+}
