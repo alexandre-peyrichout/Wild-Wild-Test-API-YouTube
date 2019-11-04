@@ -1,0 +1,78 @@
+.yt-hidden {
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.nick,
+.score {
+  color: white;
+  padding-top: 20px;
+}
+
+.game-parent {
+  background-image: url('../assets/img/bg_b&w.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.play-button {
+  color: blue;
+  border: solid 2px blue;
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.validate {
+  color: green;
+  border: solid 2px green;
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.skip-button {
+  color: red;
+  border: solid 2px red;
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.input-answer {
+  background: transparent;
+  outline: none;
+  border: solid 0 black;
+  border-bottom: solid 2px black;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+
+.count-logo-back {
+  display: flex;
+  background-image: url(../assets/img/logo_wildwildtest.png);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 10em;
+  color: white;
+  border-radius: 50%;
+  border: solid 2px white;
+}
