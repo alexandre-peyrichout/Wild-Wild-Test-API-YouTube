@@ -1,20 +1,21 @@
 import React from 'react';
 import CountDown from './Game/CountDown';
-// import PlayerAPI from './Game/PlayerAPI';
 import YouTube from 'react-youtube';
 import Score from './Game/Score';
 import SkipBtn from './Game/SkipBtn';
 import Answer from './Game/Answer';
 import ValidateBtn from './Game/ValidateBtn';
+import './Game.css';
+import Title from './Home/Title';
 
 class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      fakeDiv: 'fake-div',
+      numberCount: 'Go',
       isPlaying: false,
-
-      height: '3',
-      width: '3',
+      classCount: 'default',
       videoId: '',
       opts: {
         playerVars: {
@@ -30,7 +31,14 @@ class Game extends React.Component {
   }
 
   changeSong(video) {
-    this.setState({ videoId: video });
+    if (this.state.numberCount === 'Go') {
+      this.setState({
+        fakeDiv: 'fake-div-loading',
+        numberCount: 'Loading',
+        videoId: video,
+        classCount: 'loading'
+      });
+    }
   }
 
   _onReady(event) {
@@ -39,34 +47,56 @@ class Game extends React.Component {
   }
 
   _onPlay() {
-    this.setState({ isPlaying: true }); // quand la musique commence, le state booléen isPlaying devient true
+    console.log('playing');
+    this.setState({
+      fakeDiv: 'fake-div',
+      numberCount: 30,
+      isPlaying: true,
+      classCount: 'playing'
+    });
+    this.timerID = setInterval(() => this.tick(), 1000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID); // jsp vraiment mais apparemment faut le garder dans l'exemple de l'horloge que j'ai cannibalisé
+  }
+
+  tick() {
+    this.state.isPlaying // si le props startCount défini dans Game.js...
+      ? this.state.numberCount <= 0 // true : si le state number est inférieur ou égal à 0...
+        ? this.setState({ numberCount: this.state.numberCount }) // true : ne pas toucher
+        : this.setState({ numberCount: this.state.numberCount - 1 }) // false : nombre - 1
+      : this.setState({ numberCount: this.state.numberCount }); // false : ne pas toucher
   }
 
   render() {
     return (
-      <div>
-        <img
-          alt="placeholder"
-          src="https://thumbs.gfycat.com/PalatableFelineDipper-size_restricted.gif"
-        />
-        <CountDown startCount={this.state.isPlaying} />{' '}
-        {/*définir la props startCount selon le state isPlaying*/}
-        <button onClick={() => this.changeSong('OS6ioiNFmkk')}>Play a song</button>
-        <Answer />
-        <ValidateBtn />
-        <SkipBtn />
-        <Score />
-        <div>
-          <YouTube
-            className="yt-hidden"
-            height={this.state.height}
-            width={this.state.width}
-            videoId={this.state.videoId}
-            opts={this.state.opts}
-            onReady={this._onReady}
-            onPlay={this._onPlay}
+      <div className="game-parent">
+        <Title />
+        <div className="fake-div-parent">
+          {/*fake divs importantes pour l'anim du loading*/}
+          <div className={this.state.fakeDiv}></div>
+          <CountDown
+            onClick={() => this.changeSong('OS6ioiNFmkk')}
+            className={this.state.classCount}
+            number={this.state.numberCount}
           />
         </div>
+
+        <Answer />
+        <div className="row">
+          <SkipBtn />
+          <ValidateBtn />
+        </div>
+        <p className="nick">Nickname</p>
+        <Score />
+        <YouTube
+          className="yt-hidden"
+          videoId={this.state.videoId}
+          opts={this.state.opts}
+          onReady={this._onReady}
+          onPlay={this._onPlay}
+        />
       </div>
     );
   }
