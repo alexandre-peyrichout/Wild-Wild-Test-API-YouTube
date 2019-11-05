@@ -12,6 +12,7 @@ class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      class_parent: 'game-parent',
       fakeDiv: 'fake-div',
       numberCount: 'Go',
       isPlaying: false,
@@ -28,6 +29,10 @@ class Game extends React.Component {
     };
     this.changeSong = this.changeSong.bind(this);
     this._onPlay = this._onPlay.bind(this);
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ class_parent: 'fullvh' }), 100);
   }
 
   changeSong(video) {
@@ -71,7 +76,7 @@ class Game extends React.Component {
 
   render() {
     return (
-      <div className="game-parent">
+      <div className={this.state.class_parent}>
         <Title />
         <div className="fake-div-parent">
           {/*fake divs importantes pour l'anim du loading*/}

@@ -10,15 +10,26 @@
   padding-top: 20px;
 }
 
-.game-parent {
+.game-parent,
+.fullvh {
   background-image: url('../assets/img/bg_color.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
   display: flex;
+  height: 100vh;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.game-parent {
+  opacity: 0;
+}
+
+.fullvh {
+  opacity: 1;
 }
 
 .ready {
