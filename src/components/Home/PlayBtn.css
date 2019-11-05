@@ -5,6 +5,8 @@
   border: 2px solid#2bb542;
   background: black;
   margin-top: 100px;
+  margin: auto;
+  margin-top: 40px;
 }
 
 .swal2-success-line-tip {
@@ -27,7 +29,7 @@
   transform: rotate(-45deg);
   position: relative;
   z-index: 2;
-  height: 0.3em;
+  height: 0.4em;
   border-radius: 0.125em;
   background-color: #2bb542;
 }

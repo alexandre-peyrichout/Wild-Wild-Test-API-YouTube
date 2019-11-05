@@ -10,15 +10,26 @@
   padding-top: 20px;
 }
 
-.game-parent {
-  background-image: url('../assets/img/bg_b&w.png');
+.game-parent,
+.fullvh {
+  background-image: url('../assets/img/bg_color.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
   display: flex;
+  height: 100vh;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.game-parent {
+  opacity: 0;
+}
+
+.fullvh {
+  opacity: 1;
 }
 
 .ready {
@@ -56,8 +67,8 @@
 }
 
 .validate {
-  color: green;
-  border: solid 2px green;
+  color: rgb(1, 75, 1);
+  border: solid 2px rgb(1, 75, 1);
   background-color: black;
   border-radius: 20px;
   padding: 10px;
@@ -65,19 +76,47 @@
   margin-left: 10px;
 }
 
+.validate:hover {
+  cursor: pointer;
+  color: green;
+  border: solid 2px green;
+  box-shadow: 2px 2px 10px black;
+}
+
+.validate:active {
+  cursor: pointer;
+  color: green;
+  border: solid 2px green;
+  box-shadow: none;
+}
+
 .validate::-moz-focus-inner {
   border: 0;
 }
 
 .skip-button {
-  color: red;
-  border: solid 2px red;
+  color: rgba(255, 0, 0, 0.514);
+  border: solid 2px rgba(255, 0, 0, 0.514);
   background-color: black;
   border-radius: 20px;
   padding: 10px;
   width: 100px;
   margin-right: 10px;
   outline: none;
+}
+
+.skip-button:hover {
+  cursor: pointer;
+  color: red;
+  border: solid 2px red;
+  box-shadow: 2px 2px 10px black;
+}
+
+.skip-button:active {
+  cursor: pointer;
+  color: red;
+  border: solid 2px red;
+  box-shadow: none;
 }
 
 .skip-button::-moz-focus-inner {
@@ -143,13 +182,67 @@
     color: white;
   }
 
+  66% {
+    /* border: solid calc(30px + 2vw) black; */
+    transform: scale(0.4);
+    color: white;
+  }
+
+  84% {
+    color: red;
+  }
+
+  85% {
+    color: white;
+  }
+  86% {
+    color: red;
+  }
+  87% {
+    color: white;
+  }
+  88% {
+    color: red;
+  }
+  89% {
+    color: white;
+  }
+  90% {
+    color: red;
+  }
+  91% {
+    color: white;
+  }
+  92% {
+    color: red;
+  }
+  93% {
+    color: white;
+  }
+  94% {
+    color: red;
+  }
+  95% {
+    color: white;
+  }
+  96% {
+    color: red;
+  }
+  97% {
+    color: white;
+  }
+
+  98% {
+    color: red;
+    transform: rotate(0deg);
+  }
+
   to {
     /* border: solid calc(100px + 2vw) black; */
-    color: red;
-    font-size: 0px;
-    width: 0%;
-    height: 0%;
-    border: 0;
+    color: grey;
+    transform: scale(1);
+    transform: rotate(360deg);
+    /* filter: grayscale(1); */
   }
 }
 
@@ -186,17 +279,34 @@
 }
 
 .fake-div,
-.fake-div-loading {
+.fake-div-loading,
+.fake-div-playing {
   position: absolute;
+  background-image: url(../assets/img/disc.png);
+  background-size: cover;
+  background-position: center;
   border-radius: 50%;
   height: 100%;
   width: 100%;
   z-index: 0;
 }
 
+.fake-div-playing {
+  animation: turndisc 30s linear infinite;
+}
+
+@keyframes turndisc {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(3600deg);
+  }
+}
+
 .fake-div-loading {
   animation: shadowaround 10s linear infinite;
-  box-shadow: 10px 5px 10px beige;
+  box-shadow: 10px 5px 10px rgb(112, 91, 66);
 }
 
 @keyframes shadowaround {
@@ -206,5 +316,17 @@
 
   to {
     transform: rotate(4320deg);
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .game-parent,
+  .fullvh {
+    flex-wrap: wrap;
+  }
+
+  .game-parent h1,
+  .fullvh h1 {
+    font-size: 20px;
   }
 }

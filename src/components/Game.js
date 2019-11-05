@@ -12,6 +12,7 @@ class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      class_parent: 'game-parent',
       fakeDiv: 'fake-div',
       numberCount: 'Go',
       isPlaying: false,
@@ -28,6 +29,10 @@ class Game extends React.Component {
     };
     this.changeSong = this.changeSong.bind(this);
     this._onPlay = this._onPlay.bind(this);
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ class_parent: 'fullvh' }), 100);
   }
 
   changeSong(video) {
@@ -49,7 +54,7 @@ class Game extends React.Component {
   _onPlay() {
     console.log('playing');
     this.setState({
-      fakeDiv: 'fake-div',
+      fakeDiv: 'fake-div-playing',
       numberCount: 30,
       isPlaying: true,
       classCount: 'playing'
@@ -71,7 +76,7 @@ class Game extends React.Component {
 
   render() {
     return (
-      <div className="game-parent">
+      <div className={this.state.class_parent}>
         <Title />
         <div className="fake-div-parent">
           {/*fake divs importantes pour l'anim du loading*/}
@@ -82,14 +87,15 @@ class Game extends React.Component {
             number={this.state.numberCount}
           />
         </div>
-
-        <Answer />
-        <div className="row">
-          <SkipBtn />
-          <ValidateBtn />
+        <div className="landscape-mode">
+          <Answer />
+          <div className="row">
+            <SkipBtn />
+            <ValidateBtn />
+          </div>
+          <p className="nick">Nickname</p>
+          <Score />
         </div>
-        <p className="nick">Nickname</p>
-        <Score />
         <YouTube
           className="yt-hidden"
           videoId={this.state.videoId}

@@ -4,7 +4,13 @@ class Contact extends React.Component {
   render() {
     return (
       <div>
-        <img alt="placeholder" src="https://media2.giphy.com/media/5PSPV1ucLX31u/giphy.gif" />
+        <form>
+          <input type="text" className="lname" name="lastname" />
+          <input type="text" className="write" name="write" />
+          <div>
+            <button></button>
+          </div>
+        </form>
       </div>
     );
   }
