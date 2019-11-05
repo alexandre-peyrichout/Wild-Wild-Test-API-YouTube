@@ -82,7 +82,7 @@ class Game extends React.Component {
             number={this.state.numberCount}
           />
         </div>
-        <div>
+        <div className="landscape-mode">
           <Answer />
           <div className="row">
             <SkipBtn />
