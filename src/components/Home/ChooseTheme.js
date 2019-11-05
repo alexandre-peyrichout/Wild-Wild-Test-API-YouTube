@@ -10,23 +10,39 @@ const options = [
   { value: 'geekmusics', label: 'GEEK MUSICS' }
 ];
 
-//const ChooseTheme = () => <Select options={options} styles={colourStyles} />;
+class ChooseTheme extends Component {
+  constructor(props) {
+    super(props);
 
-export default () => (
-  <Select
-    className="chooseTheme"
-    options={options}
-    defaultValue={options}
-    label="Single select"
-    options={options}
-    theme={theme => ({
-      ...theme,
-      borderRadius: 15,
-      colors: {
-        ...theme.colors,
-        primary25: '#62F6B4',
-        primary: 'black'
-      }
-    })}
-  />
-);
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    console.log(event.value);
+    this.props.parentMethodChoosePlaylist(event.value);
+  }
+
+  render() {
+    return (
+      <Select
+        onChange={this.handleChange}
+        placeholder="Pick a theme !"
+        defaultValue={this.props.value}
+        className="chooseTheme"
+        options={options}
+        label="Single select"
+        theme={theme => ({
+          ...theme,
+          borderRadius: 15,
+          colors: {
+            ...theme.colors,
+            primary25: '#62F6B4',
+            primary: 'black'
+          }
+        })}
+      />
+    );
+  }
+}
+
+export default ChooseTheme;
