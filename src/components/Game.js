@@ -54,11 +54,7 @@ class Game extends React.Component {
       isPlaying: true,
       classCount: 'playing'
     });
-    // quand la musique commence, le state booléen isPlaying devient true
-  }
-
-  componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 1000); // effectue tick() toutes les 1000 millisecondes
+    this.timerID = setInterval(() => this.tick(), 1000);
   }
 
   componentWillUnmount() {
