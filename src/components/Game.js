@@ -82,14 +82,15 @@ class Game extends React.Component {
             number={this.state.numberCount}
           />
         </div>
-
-        <Answer />
-        <div className="row">
-          <SkipBtn />
-          <ValidateBtn />
+        <div>
+          <Answer />
+          <div className="row">
+            <SkipBtn />
+            <ValidateBtn />
+          </div>
+          <p className="nick">Nickname</p>
+          <Score />
         </div>
-        <p className="nick">Nickname</p>
-        <Score />
         <YouTube
           className="yt-hidden"
           videoId={this.state.videoId}

@@ -11,7 +11,7 @@
 }
 
 .game-parent {
-  background-image: url('../assets/img/bg_b&w.png');
+  background-image: url('../assets/img/bg_color.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -277,5 +277,15 @@
 
   to {
     transform: rotate(4320deg);
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .game-parent {
+    flex-wrap: wrap;
+  }
+
+  .game-parent h1 {
+    font-size: 20px;
   }
 }
