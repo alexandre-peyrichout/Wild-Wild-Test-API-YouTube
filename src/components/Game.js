@@ -54,7 +54,7 @@ class Game extends React.Component {
       isPlaying: true,
       classCount: 'playing'
     });
-    this.tick(); // quand la musique commence, le state booléen isPlaying devient true
+    // quand la musique commence, le state booléen isPlaying devient true
   }
 
   componentDidMount() {
