@@ -89,9 +89,10 @@
   outline: none;
   border: solid 0 black;
   border-bottom: solid 2px black;
-  max-width: 90%;
+  max-width: calc(200px + 15vw);
+  padding: 5px 0px;
   text-align: center;
-  font-size: calc(1rem + 2vw);
+  font-size: calc(1rem + 1.5vw);
   color: white;
   margin: 20px auto;
 }
