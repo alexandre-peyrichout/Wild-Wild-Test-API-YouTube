@@ -72,6 +72,13 @@
   box-shadow: 2px 2px 10px black;
 }
 
+.validate:active {
+  cursor: pointer;
+  color: green;
+  border: solid 2px green;
+  box-shadow: none;
+}
+
 .validate::-moz-focus-inner {
   border: 0;
 }
@@ -92,6 +99,13 @@
   color: red;
   border: solid 2px red;
   box-shadow: 2px 2px 10px black;
+}
+
+.skip-button:active {
+  cursor: pointer;
+  color: red;
+  border: solid 2px red;
+  box-shadow: none;
 }
 
 .skip-button::-moz-focus-inner {
