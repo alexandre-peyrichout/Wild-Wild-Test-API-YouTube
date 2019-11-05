@@ -145,7 +145,7 @@
 
 .default,
 .playing {
-  font-size: calc(5rem + 4vh);
+  font-size: calc(5rem + 3vh);
 }
 
 .playing {
@@ -157,7 +157,7 @@
 }
 
 .loading {
-  font-size: calc(2rem + 4vh);
+  font-size: calc(2rem + 3vh);
 }
 
 @keyframes playing {
@@ -311,4 +311,9 @@
   .landscape-mode {
     margin: auto auto 20px auto;
   }
+}
+
+.img-cry {
+  width: 150px;
+  height: 150px;
 }
