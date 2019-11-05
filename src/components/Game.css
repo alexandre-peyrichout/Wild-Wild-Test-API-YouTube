@@ -306,5 +306,9 @@
   .game-parent,
   .fullvh {
     flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+  .landscape-mode {
+    margin: auto auto 20px auto;
   }
 }
