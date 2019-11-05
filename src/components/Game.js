@@ -1,6 +1,5 @@
 import React from 'react';
 import CountDown from './Game/CountDown';
-// import PlayerAPI from './Game/PlayerAPI';
 import YouTube from 'react-youtube';
 import Score from './Game/Score';
 import SkipBtn from './Game/SkipBtn';
@@ -32,14 +31,14 @@ class Game extends React.Component {
   }
 
   changeSong(video) {
-    this.state.numberCount === 'Go'
-      ? this.setState({
-          fakeDiv: 'fake-div-loading',
-          numberCount: 'Loading',
-          videoId: video,
-          classCount: 'loading'
-        })
-      : console.log('anti click');
+    if (this.state.numberCount === 'Go') {
+      this.setState({
+        fakeDiv: 'fake-div-loading',
+        numberCount: 'Loading',
+        videoId: video,
+        classCount: 'loading'
+      });
+    }
   }
 
   _onReady(event) {
@@ -89,7 +88,7 @@ class Game extends React.Component {
         </div>
 
         <Answer />
-        <div>
+        <div className="row">
           <SkipBtn />
           <ValidateBtn />
         </div>
