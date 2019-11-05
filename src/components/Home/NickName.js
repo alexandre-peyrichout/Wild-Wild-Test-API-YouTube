@@ -29,15 +29,14 @@ export default class NickName extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <label className="nickName">
-            Pick-up a name !
-            <input
-              type="text"
-              id="name"
-              onChange={this.handleChange}
-              className={max ? 'length-maximum-reached' : 'length-ok'}
-            />
-          </label>
+          <input
+            placeholder="Write a name"
+            type="text"
+            id="name"
+            onChange={this.handleChange}
+            className={max ? 'length-maximum-reached' : 'length-ok'}
+          />
+
           {/* { <input type="submit" value="Envoyer" /> } */}
           {this.state.nameValidate && <PlayBtn />}
         </form>

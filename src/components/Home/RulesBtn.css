@@ -1,9 +1,9 @@
 #help_coin {
-    max-width: 90px;
-    margin: 0px 50px 0px 0px; 
+  max-width: 90px;
+  margin: 0px 50px 0px 0px;
 }
 
 .help_coin {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: center;
 }

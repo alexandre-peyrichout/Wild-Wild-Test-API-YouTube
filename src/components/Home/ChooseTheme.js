@@ -7,7 +7,7 @@ const options = [
   { value: 'teenmovies', label: 'TEEN MOVIES' },
   { value: 'scarymovies', label: 'SCARY MOVIES' },
   { value: 'wildwildwest', label: 'WILD WILD WEST' },
-  { value: 'geekmusics', label: 'GEEK MUSICS' }
+  { value: 'retrogaming', label: 'RETRO GAMING' }
 ];
 
 class ChooseTheme extends Component {

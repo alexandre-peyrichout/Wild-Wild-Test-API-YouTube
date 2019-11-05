@@ -25,13 +25,14 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home">
-        <RulesBtn />
         <Title />
         <Logo />
-        <NickName />
-
-        <ChooseTheme parentMethodChoosePlaylist={this.goToPlaylist} value={this.state.idSongs} />
-        <PlayBtn />
+        <div className="threeflex">
+          <NickName />
+          <ChooseTheme parentMethodChoosePlaylist={this.goToPlaylist} value={this.state.idSongs} />
+          <PlayBtn />
+        </div>
+        <RulesBtn />
       </div>
     );
   }
