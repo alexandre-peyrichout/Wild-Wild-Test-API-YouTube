@@ -32,22 +32,6 @@
   opacity: 1;
 }
 
-.ready {
-  color: teal;
-  border: solid 2px teal;
-  background-color: black;
-  border-radius: 20px;
-  padding: 10px;
-  width: 200px;
-  height: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.ready::-moz-focus-inner {
-  border: 0;
-}
-
 .loading-btn {
   color: teal;
   border: dotted 4px white;
@@ -161,7 +145,7 @@
 
 .default,
 .playing {
-  font-size: calc(5rem + 2vw);
+  font-size: calc(5rem + 4vh);
 }
 
 .playing {
@@ -173,7 +157,7 @@
 }
 
 .loading {
-  font-size: calc(2rem + 2vw);
+  font-size: calc(2rem + 4vh);
 }
 
 @keyframes playing {
@@ -272,10 +256,9 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: calc(200px + 4vw);
-  height: calc(200px + 4vw);
-  margin-left: auto;
-  margin-right: auto;
+  width: calc(150px + 10vh);
+  height: calc(150px + 10vh);
+  margin: 20px auto;
 }
 
 .fake-div,
@@ -323,10 +306,5 @@
   .game-parent,
   .fullvh {
     flex-wrap: wrap;
-  }
-
-  .game-parent h1,
-  .fullvh h1 {
-    font-size: 20px;
   }
 }
