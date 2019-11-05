@@ -49,7 +49,7 @@ class Game extends React.Component {
   _onPlay() {
     console.log('playing');
     this.setState({
-      fakeDiv: 'fake-div',
+      fakeDiv: 'fake-div-playing',
       numberCount: 30,
       isPlaying: true,
       classCount: 'playing'
