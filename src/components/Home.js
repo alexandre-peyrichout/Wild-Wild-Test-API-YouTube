@@ -5,6 +5,7 @@ import './Home.css';
 import NickName from './Home/NickName';
 import ChooseTheme from './Home/ChooseTheme';
 import RulesBtn from './Home/RulesBtn';
+import PlayBtn from './Home/PlayBtn';
 
 class Home extends React.Component {
   constructor(props) {
@@ -31,7 +32,6 @@ class Home extends React.Component {
 
         <ChooseTheme parentMethodChoosePlaylist={this.goToPlaylist} value={this.state.idSongs} />
         <PlayBtn />
-
       </div>
     );
   }
