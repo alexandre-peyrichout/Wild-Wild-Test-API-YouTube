@@ -5,6 +5,7 @@ import './Home.css';
 import NickName from './Home/NickName';
 import ChooseTheme from './Home/ChooseTheme';
 import RulesBtn from './Home/RulesBtn';
+import PlayBtn from './Home/PlayBtn';
 
 class Home extends React.Component {
   constructor(props) {
@@ -24,14 +25,14 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home">
-        <RulesBtn />
         <Title />
         <Logo />
-        <NickName />
-
-        <ChooseTheme parentMethodChoosePlaylist={this.goToPlaylist} value={this.state.idSongs} />
-        <PlayBtn />
-
+        <div className="threeflex">
+          <NickName />
+          <ChooseTheme parentMethodChoosePlaylist={this.goToPlaylist} value={this.state.idSongs} />
+          <PlayBtn />
+        </div>
+        <RulesBtn />
       </div>
     );
   }

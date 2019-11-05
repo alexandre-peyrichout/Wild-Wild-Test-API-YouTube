@@ -1,5 +1,5 @@
 .chooseTheme {
-  width: 20%;
+  max-width: calc(150px + 15vw);
   padding-top: 60px;
   margin: auto;
 }

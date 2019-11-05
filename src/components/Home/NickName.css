@@ -11,13 +11,20 @@ form,
 #name {
   background: transparent;
 }
-.nickName .length-ok {
-  border-color: #9ae6b4;
-  border-style: dashed;
-  border-width: 0px 0px 4px 0px;
+.length-ok {
+  background: transparent;
+  outline: none;
+  border: solid 0 black;
+  border-bottom: dashed 4px #9ae6b4;
+  max-width: calc(150px + 15vw);
+  padding: 5px 0px;
+  text-align: center;
+  font-size: calc(1rem + 1.5vw);
+  color: white;
+  margin: 20px auto;
 }
 
-.nickName .length-maximum-reached {
+.length-maximum-reached {
   border-color: #fc8181;
   border-style: dashed;
   border-width: 0px 0px 4px 0px;
