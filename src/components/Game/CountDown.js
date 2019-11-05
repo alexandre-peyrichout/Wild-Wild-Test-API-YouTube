@@ -3,9 +3,7 @@ import React from 'react';
 class CountDown extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      // nombre du compteur en secondes
-    };
+    this.state = {};
     this.go = this.go.bind(this);
   }
 
