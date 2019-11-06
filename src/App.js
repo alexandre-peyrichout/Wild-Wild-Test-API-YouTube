@@ -9,11 +9,12 @@ import Game from './components/Game';
 import Contact from './components/Contact';
 import Legal from './components/Legal';
 import Rules from './components/Rules';
+import Highscores from './components/Highscores';
 
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div id="app" className="App">
         <NavLink activeClassName="active" exact to="/">
           Home
         </NavLink>
@@ -29,12 +30,16 @@ class App extends React.Component {
         <NavLink activeClassName="active" to="/Rules">
           Rules
         </NavLink>
+        <NavLink activeClassName="active" to="/Highscores">
+          Highscores
+        </NavLink>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/Game" component={Game} />
           <Route exact path="/Contact" component={Contact} />
           <Route exact path="/Legal" component={Legal} />
           <Route exact path="/Rules" component={Rules} />
+          <Route exact path="/Highscores" component={Highscores} />
         </Switch>
       </div>
     );
