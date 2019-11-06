@@ -12,3 +12,13 @@
 .home-nickname-play {
   margin-bottom: 140px;
 }
+
+@media screen and (max-height: 500px) {
+  .home {
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+  .home-nickname-play {
+    margin: auto auto 20px auto;
+  }
+}
