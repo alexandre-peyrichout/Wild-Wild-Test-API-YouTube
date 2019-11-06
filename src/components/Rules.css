@@ -13,7 +13,7 @@
   font-weight: 150;
 }
 
-h2 {
+#demo-five-modal h2 {
   margin: 30px;
   font-size: calc(0.666rem + 1.666vw);
   color: #f0efef;

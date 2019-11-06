@@ -14,11 +14,11 @@
   align-items: flex-end;
 }
 
-li {
+.Navbar li {
   list-style-type: none;
   color: #b7987e;
 }
-li a {
+.Navbar li a {
   text-decoration: none;
   color: #d6baa3;
   font-family: 'Varela Round', sans-serif;
