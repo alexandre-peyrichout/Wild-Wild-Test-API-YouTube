@@ -9,3 +9,7 @@
 .help_coin:hover {
   transform: rotateY(360deg);
 }
+
+.test {
+  width: 50px;
+}
