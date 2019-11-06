@@ -10,22 +10,20 @@ form,
 }
 #name {
   background: transparent;
+  font-family: 'Varela Round', sans-serif;
+  font-size: calc(1rem + 0.3vh);
+  font-weight: 150;
 }
-.length-ok {
+
+.NickName {
   background: transparent;
   outline: none;
   border: solid 0 black;
-  border-bottom: dashed 4px #9ae6b4;
+  border-bottom: dashed 4px #232524;
   max-width: calc(150px + 15vw);
   padding: 5px 0px;
   text-align: center;
   font-size: calc(1rem + 1.5vw);
   color: white;
   margin: 20px auto;
-}
-
-.length-maximum-reached {
-  border-color: #fc8181;
-  border-style: dashed;
-  border-width: 0px 0px 4px 0px;
 }

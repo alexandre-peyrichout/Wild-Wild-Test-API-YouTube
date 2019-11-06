@@ -2,4 +2,11 @@
   max-width: calc(150px + 15vw);
   padding-top: 60px;
   margin: auto;
+  font-family: 'Varela Round', sans-serif;
+  font-size: calc(1rem + 0.3vh);
+  font-weight: 150;
+}
+
+.css-2b097c-container {
+  z-index: 10;
 }

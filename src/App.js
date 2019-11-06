@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 
 import { Switch, Route } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+
+import Navbar from './components/Navbar';
 
 import Home from './components/Home';
 import Game from './components/Game';
@@ -15,24 +16,7 @@ class App extends React.Component {
   render() {
     return (
       <div id="app" className="App">
-        <NavLink activeClassName="active" exact to="/">
-          Home
-        </NavLink>
-        <NavLink activeClassName="active" to="/Game">
-          Game
-        </NavLink>
-        <NavLink activeClassName="active" to="/Contact">
-          Contact
-        </NavLink>
-        <NavLink activeClassName="active" to="/Legal">
-          Legal
-        </NavLink>
-        <NavLink activeClassName="active" to="/Rules">
-          Rules
-        </NavLink>
-        <NavLink activeClassName="active" to="/Highscores">
-          Highscores
-        </NavLink>
+        <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/Game" component={Game} />
