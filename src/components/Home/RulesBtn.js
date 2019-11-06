@@ -6,7 +6,7 @@ export default () => {
   return (
     <div className="help_coin">
       <img src={RulesBtn} class="test" id="help_coin" alt="help_button"></img>
-      <div class="side back"></div>
+      <div className="side back"></div>
     </div>
   );
 };
