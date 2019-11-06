@@ -318,6 +318,315 @@ export const wildwildwest = [
   }
 ];
 
+export const hardbass = [
+  {
+    id: 1,
+    name: 'Gopnik',
+    author: 'DJ Blyatman',
+    year: '',
+    length: '',
+    url: '2tch4J_pP9o',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 2,
+    name: 'Narkotik Kal',
+    author: 'Hard Bass School',
+    year: '',
+    length: '',
+    url: 'fro6je9L5kg',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 3,
+    name: 'Bochka, Bass, Kolbaser',
+    author: 'XS Project',
+    year: '',
+    length: '',
+    url: 'VLW1ieY4Izw',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 4,
+    name: 'How We Party',
+    author: 'DJ Blyatman & XS Project',
+    year: '',
+    length: '',
+    url: 'agV86_dFVOE',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 5,
+    name: 'Meanwhile in Russia (Take me to Russia)',
+    author: 'XS Project',
+    year: '',
+    length: '',
+    url: 'AyDi8kI9gp0',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 6,
+    name: 'Cyka Blyat',
+    author: 'DJ Blyatman & Russian Village Boys',
+    year: '',
+    length: '',
+    url: 'NqM032dnPtk',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 7,
+    name: 'Opa Blia',
+    author: 'Hard Bass School',
+    year: '',
+    length: '',
+    url: 'XveHckJdYvY',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 8,
+    name: 'Louder',
+    author: 'XS Project',
+    year: '',
+    length: '',
+    url: '3fEg1r6SH9Q',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 9,
+    name: 'Generation Hardbass',
+    author: 'Boris vs. DJ Blyatman',
+    year: '',
+    length: '',
+    url: 'Ph4MUCD90Yo',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 10,
+    name: 'SLAV KING',
+    author: 'Boris VS. DJ Blyatman',
+    year: '',
+    length: '',
+    url: 'QIjKijhv1OU',
+    pic: '',
+    answers: []
+  }
+];
+
+export const newSeries = [
+  {
+    id: 1,
+    name: 'West World',
+    author: 'Ramin Djawadi',
+    year: '',
+    length: '',
+    url: '3et63xTh2bE',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 2,
+    name: 'Vikings',
+    author: 'Fever Heart',
+    year: '',
+    length: '',
+    url: 'gmyCRJkKeKs',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 3,
+    name: 'Game of Thrones',
+    author: 'Ramin Djawadi',
+    year: '',
+    length: '',
+    url: 'D3z12372SkI',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 4,
+    name: 'American Horror Story',
+    author: '',
+    year: '',
+    length: '',
+    url: 'GC954KG8sBM',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 5,
+    name: 'Narcos',
+    author: '',
+    year: '',
+    length: '',
+    url: 'PtJ6yAGjsIs',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 6,
+    name: 'The Walking Dead',
+    author: '',
+    year: '',
+    length: '',
+    url: 'v5ISBJc1wFk',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 7,
+    name: 'Orange is the New Black',
+    author: '',
+    year: '',
+    length: '',
+    url: 'fBITGyJynfA',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 8,
+    name: 'La Casa de Papel',
+    author: '',
+    year: '',
+    length: '',
+    url: 'j4fMyFUJgfA',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 9,
+    name: 'Stranger Things',
+    author: '',
+    year: '',
+    length: '',
+    url: '-RcPZdihrp4',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 10,
+    name: 'Peaky Blinders',
+    author: '',
+    year: '',
+    length: '',
+    url: 'Be56k1Ui2Yg',
+    pic: '',
+    answers: []
+  }
+];
+
+export const oldSeries = [
+  {
+    id: 1,
+    name: 'Buffy',
+    author: '',
+    year: '',
+    length: '',
+    url: '1LT7m5lu_Zg',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 2,
+    name: "Dawson's Creek",
+    author: '',
+    year: '',
+    length: '',
+    url: '8iagmMy7JEE',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 3,
+    name: 'Friends',
+    author: '',
+    year: '',
+    length: '',
+    url: 'jRP5mpZVmN8',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 4,
+    name: 'The Fresh Prince of Bel Air',
+    author: '',
+    year: '',
+    length: '',
+    url: 'OPVqumgVSlY',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 5,
+    name: 'Beverly Hills',
+    author: '',
+    year: '',
+    length: '',
+    url: 'iY-IFU9LFkY',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 6,
+    name: 'Smallville',
+    author: '',
+    year: '',
+    length: '',
+    url: '_c04c0nZLDo',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 7,
+    name: 'Charmed',
+    author: '',
+    year: '',
+    length: '',
+    url: 'OVoERU5W3Hs',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 8,
+    name: 'X-Files',
+    author: '',
+    year: '',
+    length: '',
+    url: 'teibLCzIx6g',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 9,
+    name: 'Dark Angel',
+    author: '',
+    year: '',
+    length: '',
+    url: 'a1sY3OkmvXs',
+    pic: '',
+    answers: []
+  },
+  {
+    id: 10,
+    name: 'The Big Bang Theory',
+    author: '',
+    year: '',
+    length: '',
+    url: 'EhoYKLIcTLM',
+    pic: '',
+    answers: []
+  }
+];
+
 export const template = [
   {
     id: 1,
