@@ -1,0 +1,36 @@
+.legal-container {
+  padding: 10px 5px 10px 5px;
+}
+
+.legal {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 10px 15px 20px 15px;
+  max-width: 500px;
+  background-color: #8d817e;
+  box-shadow: 10px 1px 100px #7e8a8d;
+  border: solid 4px white;
+  border-radius: 30px;
+}
+
+.legal p {
+  text-align: justify;
+}
+
+.legal ul {
+  list-style: none;
+}
+
+.legal h2 {
+  margin: 20px auto;
+}
+
+.legal h3 {
+  margin: 30px auto 10px auto;
+}
+
+.legal hr {
+  margin: 20px;
+  color: white;
+}
