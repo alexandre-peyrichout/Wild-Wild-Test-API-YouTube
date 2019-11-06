@@ -2,7 +2,7 @@ import React from 'react';
 import './NickName.css';
 import PlayBtn from '../Home/PlayBtn';
 
-const MAX_LENGTH = 10;
+const MAX_LENGTH = 50;
 
 export default class NickName extends React.Component {
   constructor(props) {
@@ -34,7 +34,7 @@ export default class NickName extends React.Component {
             type="text"
             id="name"
             onChange={this.handleChange}
-            className={max ? 'length-maximum-reached' : 'length-ok'}
+            className="NickName"
           />
 
           {/* { <input type="submit" value="Envoyer" /> } */}

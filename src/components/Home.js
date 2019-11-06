@@ -4,7 +4,7 @@ import Logo from './Home/Logo';
 import './Home.css';
 import NickName from './Home/NickName';
 import ChooseTheme from './Home/ChooseTheme';
-import RulesBtn from './Home/RulesBtn';
+
 import PlayBtn from './Home/PlayBtn';
 
 class Home extends React.Component {
@@ -27,12 +27,11 @@ class Home extends React.Component {
       <div className="home">
         <Title />
         <Logo />
-        <div className="threeflex">
+        <div className="home-nickname-play">
           <NickName />
           <ChooseTheme parentMethodChoosePlaylist={this.goToPlaylist} value={this.state.idSongs} />
           <PlayBtn />
         </div>
-        <RulesBtn />
       </div>
     );
   }
