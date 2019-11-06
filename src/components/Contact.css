@@ -32,22 +32,19 @@
 }
 
 .contactform p {
-  font-size: calc(0.7vw + 1vh + 3vmin);
+  font-size: calc(1.5vh + 3vmin);
 }
 
 .contactform input {
   display: flex;
   background: transparent;
   outline: none;
-  border: solid 0 white;
+  border: 0;
   border-bottom: dashed 2px white;
-
   padding: 5px 0px;
   text-align: center;
-  font-size: calc(0.5vw + 2vh + 0.5vmin);
+  font-size: calc(2vh + 0.5vmin);
   color: white;
-
-  height: 10vh;
   width: 50%;
 }
 
@@ -58,7 +55,7 @@
   border: solid 1px white;
 
   padding: 5px 0px;
-  font-size: calc(0.5vw + 2vh + 0.5vmin);
+  font-size: calc(2vh + 0.5vmin);
   color: white;
 
   height: 20vh;

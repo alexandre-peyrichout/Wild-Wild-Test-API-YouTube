@@ -1,0 +1,52 @@
+#react-aria-modal-dialog {
+  margin-top: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  min-width: 290px;
+  background: #232524;
+  border-radius: 50px;
+  border: solid 4px #f0efef;
+  opacity: 0.8;
+  font-family: 'Varela Round', regular;
+  font-weight: 150;
+}
+
+h2 {
+  margin: 30px;
+  font-size: calc(0.666rem + 1.666vw);
+  color: #f0efef;
+  text-align: center;
+  font-family: 'Varela Round', regular;
+  font-weight: 150;
+}
+
+#demo-five-modal li {
+  margin: 10px;
+  align-items: center;
+  color: #f0efef;
+  text-align: left;
+  font-size: calc(0.666rem + 0.666vw);
+  padding: 3%;
+}
+
+ul.modal-body {
+  list-style-type: none;
+  padding: 0px;
+}
+
+button#demo-five-deactivate {
+  padding: 1.266% 5% 1.266% 5%;
+  margin-bottom: 40px !important;
+  background-color: transparent;
+  color: #f0efef;
+  border: solid 4px #f0efef;
+  border-radius: 50px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  font-size: calc(0.666rem + 0.666vw);
+  font-family: 'Varela Round', regular;
+  font-weight: 150;
+}
