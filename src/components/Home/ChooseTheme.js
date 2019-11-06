@@ -7,7 +7,8 @@ const options = [
   { value: 'teenmovies', label: 'TEEN MOVIES' },
   { value: 'scarymovies', label: 'SCARY MOVIES' },
   { value: 'wildwildwest', label: 'WILD WILD WEST' },
-  { value: 'retrogaming', label: 'RETRO GAMING' }
+  { value: 'retrogaming', label: 'RETRO GAMING' },
+  { value: 'hardbass', label: 'сука блядь хардбасс' }
 ];
 
 class ChooseTheme extends Component {
@@ -20,6 +21,14 @@ class ChooseTheme extends Component {
   handleChange(event) {
     console.log(event.value);
     this.props.parentMethodChoosePlaylist(event.value);
+    if (event.value === 'hardbass') {
+      document.getElementById('chooseTheme').style.animation =
+        'hardbass .33s infinite ease-in-out running';
+      console.log('CYKA');
+    } else {
+      console.log('blyet');
+      document.getElementById('chooseTheme').style.animation = 'hardbass .3s infinite paused';
+    }
   }
 
   render() {
@@ -28,6 +37,7 @@ class ChooseTheme extends Component {
         onChange={this.handleChange}
         placeholder="Pick a theme !"
         defaultValue={this.props.value}
+        id="chooseTheme"
         className="chooseTheme"
         options={options}
         label="Single select"
