@@ -4,10 +4,9 @@ import Logo from './Home/Logo';
 import './Home.css';
 import NickName from './Home/NickName';
 import ChooseTheme from './Home/ChooseTheme';
-import Navbar from './Navbar';
 import Burger from './Burger';
-
 import PlayBtn from './Home/PlayBtn';
+import RulesBtn from './Home/RulesBtn';
 
 class Home extends React.Component {
   constructor(props) {
@@ -28,7 +27,7 @@ class Home extends React.Component {
     return (
       <div className="home">
         <Burger />
-        <Navbar />
+        <RulesBtn />
         <Title />
         <Logo />
         <div className="home-nickname-play">
