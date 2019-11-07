@@ -8,7 +8,11 @@
   margin: 20px auto;
   padding: 10px 15px 20px 15px;
   max-width: 500px;
-  background-color: #8d817e;
+  background-image: url(../assets/img/bg_color.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
   box-shadow: 10px 1px 100px #7e8a8d;
   border: solid 4px white;
   border-radius: 30px;
