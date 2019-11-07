@@ -10,7 +10,7 @@
 }
 
 .home-nickname-play {
-  margin-bottom: 140px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-height: 500px) {
@@ -19,6 +19,6 @@
     padding-bottom: 20px;
   }
   .home-nickname-play {
-    margin: auto auto 20px auto;
+    margin: auto auto 0px auto;
   }
 }
