@@ -4,6 +4,7 @@ import Logo from './Home/Logo';
 import './Home.css';
 import NickName from './Home/NickName';
 import ChooseTheme from './Home/ChooseTheme';
+import Navbar from './Navbar';
 
 import PlayBtn from './Home/PlayBtn';
 
@@ -25,6 +26,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home">
+        <Navbar />
         <Title />
         <Logo />
         <div className="home-nickname-play">
