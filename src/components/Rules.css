@@ -1,9 +1,13 @@
-#react-aria-modal-dialog {
-  margin-top: 18vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 48%;
+.Rule {
+  background-image: url('../assets/img/bg_color.png');
+  height: 100vh;
+  background-size: cover;
+  margin: 0;
+  padding-top: 8vh;
+}
+
+.Rule-box {
+  width: 70%;
   min-width: 290px;
   background: #232524;
   border-radius: 50px;
@@ -11,10 +15,10 @@
   opacity: 0.8;
   font-family: 'Varela Round', regular;
   font-weight: 150;
+  margin: auto;
 }
 
-#demo-five-modal h2 {
-  margin: 30px;
+.Rule-Title {
   font-size: calc(0.666rem + 1.666vw);
   color: #f0efef;
   text-align: center;
@@ -22,7 +26,7 @@
   font-weight: 150;
 }
 
-#demo-five-modal li {
+.Rule-box li {
   margin: 10px;
   align-items: center;
   color: #f0efef;
@@ -31,22 +35,7 @@
   padding: 3%;
 }
 
-ul.modal-body {
+ul.Rule-modal-body {
   list-style-type: none;
   padding: 0px;
-}
-
-button#demo-five-deactivate {
-  padding: 1.266% 5% 1.266% 5%;
-  margin-bottom: 40px !important;
-  background-color: transparent;
-  color: #f0efef;
-  border: solid 4px #f0efef;
-  border-radius: 50px;
-  margin: auto;
-  display: flex;
-  text-align: center;
-  font-size: calc(0.666rem + 0.666vw);
-  font-family: 'Varela Round', regular;
-  font-weight: 150;
 }
