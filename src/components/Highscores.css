@@ -2,6 +2,7 @@
   min-height: 100vh;
   background-image: url('https://www.bibleclipart.net/images/wood-panel-hd-background.jpg');
   filter: grayscale(0.5);
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,15 +25,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 70%;
+  max-width: 500px;
   color: black;
   font-family: 'Ultra', regular;
-  font-size: 2rem;
+  font-size: calc(0.5rem + 2vh);
   display: none;
 }
 
 .Score-Title {
   margin: 1rem;
+  font-weight: normal;
 }
 
 .Score-List {
@@ -40,6 +43,7 @@
   width: 100%;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 .Score-List-Element {
