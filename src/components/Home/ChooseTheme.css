@@ -1,6 +1,5 @@
 .chooseTheme {
   max-width: calc(150px + 15vw);
-  padding-top: 20px;
   margin: auto;
   font-family: 'Varela Round', sans-serif;
   font-size: calc(1rem + 0.3vh);
