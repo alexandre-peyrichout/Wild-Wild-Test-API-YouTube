@@ -2,10 +2,7 @@ form,
 .NickName {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
+  justify-content: space-around;
   font-family: 'Varela Round', regular;
 }
 #name {
