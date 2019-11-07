@@ -68,10 +68,9 @@ class Game extends React.Component {
 
   tick() {
     this.state.isPlaying // si le props startCount défini dans Game.js...
-      ? this.state.numberCount <= 1 ||
-        this.state.numberCount === 'https://media.giphy.com/media/j5WNDiz8VRwhSWr3oW/source.gif' // true : si le state number est inférieur ou égal à 0...
+      ? this.state.numberCount <= 1 || this.state.numberCount === 'cry' // true : si le state number est inférieur ou égal à 0...
         ? this.setState({
-            numberCount: 'https://media.giphy.com/media/j5WNDiz8VRwhSWr3oW/source.gif'
+            numberCount: 'cry'
           }) // true : ne pas toucher
         : this.setState({ numberCount: this.state.numberCount - 1 }) // false : nombre - 1
       : this.setState({ numberCount: this.state.numberCount }); // false : ne pas toucher

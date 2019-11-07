@@ -1,4 +1,5 @@
 import React from 'react';
+import cry from '../../assets/img/cry.gif';
 
 class CountDown extends React.Component {
   constructor(props) {
@@ -14,12 +15,8 @@ class CountDown extends React.Component {
   render() {
     return (
       <div onClick={this.go} className={this.props.className} id="countdown-number">
-        {this.props.number === 'https://media.giphy.com/media/j5WNDiz8VRwhSWr3oW/source.gif' ? (
-          <img
-            src="https://media.giphy.com/media/j5WNDiz8VRwhSWr3oW/source.gif"
-            alt="cry"
-            className="img-cry"
-          />
+        {this.props.number === 'cry' ? (
+          <img src={cry} alt="cry" className="img-cry" />
         ) : (
           <span>{this.props.number}</span>
         )}
