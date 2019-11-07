@@ -21,7 +21,7 @@
   transition-timing-function: ease-in-out;
   transition-duration: 1s;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .game-parent {
