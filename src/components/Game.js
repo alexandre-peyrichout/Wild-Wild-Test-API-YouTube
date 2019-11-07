@@ -84,7 +84,7 @@ class Game extends React.Component {
           {/*fake divs importantes pour l'anim du loading*/}
           <div className={this.state.fakeDiv}></div>
           <CountDown
-            onClick={() => this.changeSong('OS6ioiNFmkk')}
+            onClick={() => this.changeSong('ZHapXKq0yOY')}
             className={this.state.classCount}
             number={this.state.numberCount}
           />
