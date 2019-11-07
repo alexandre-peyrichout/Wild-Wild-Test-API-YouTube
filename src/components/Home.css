@@ -2,6 +2,7 @@
   background-image: url('../assets/img/bg_color.png');
   height: 100vh;
   background-size: cover;
+  background-position: center;
   margin: 0;
   padding: 0;
   display: flex;
@@ -16,9 +17,9 @@
 @media screen and (max-height: 500px) {
   .home {
     flex-wrap: wrap;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
   .home-nickname-play {
-    margin: auto auto 0px auto;
+    margin: auto auto 15vh auto;
   }
 }
