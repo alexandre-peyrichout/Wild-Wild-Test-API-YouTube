@@ -5,6 +5,7 @@ import './Home.css';
 import NickName from './Home/NickName';
 import ChooseTheme from './Home/ChooseTheme';
 import Navbar from './Navbar';
+import Burger from './Burger';
 
 import PlayBtn from './Home/PlayBtn';
 
@@ -26,6 +27,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home">
+        <Burger />
         <Navbar />
         <Title />
         <Logo />
