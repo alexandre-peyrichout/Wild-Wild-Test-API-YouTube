@@ -1,5 +1,5 @@
 import React from 'react';
-import cry from '../../assets/img/cry.gif';
+import cry from '../../assets/img/no.gif';
 
 class CountDown extends React.Component {
   constructor(props) {

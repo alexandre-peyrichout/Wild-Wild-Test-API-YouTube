@@ -314,6 +314,9 @@
 }
 
 .img-cry {
-  width: 150px;
-  height: 150px;
+  width: 80%;
+  height: 80%;
+  transform: rotate(180deg);
+  border-radius: 50%;
+  transition-duration: 1s;
 }
