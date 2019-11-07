@@ -20,6 +20,7 @@
 }
 
 .Burger-Div {
+  z-index: 99;
   display: flex;
   position: absolute;
   overflow: hidden;
@@ -88,7 +89,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 30%;
+  width: 40%;
+  min-width: 200px;
 }
 
 .Burger-Link:hover .Burger-Bullet {
