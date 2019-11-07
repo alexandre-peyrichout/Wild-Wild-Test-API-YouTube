@@ -43,7 +43,7 @@ class ChooseTheme extends Component {
         label="Single select"
         theme={theme => ({
           ...theme,
-          borderRadius: 15,
+          borderRadius: 0,
           colors: {
             ...theme.colors,
             primary25: '#62F6B4',
