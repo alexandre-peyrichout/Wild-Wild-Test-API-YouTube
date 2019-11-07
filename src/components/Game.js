@@ -96,9 +96,10 @@ class Game extends React.Component {
             <SkipBtn />
             <ValidateBtn />
           </div>
-          <p className="nick">Nickname</p>
-          <Score />
         </div>
+        <p className="nick">Nickname</p>
+        <Score />
+
         <YouTube
           className="yt-hidden"
           videoId={this.state.videoId}
