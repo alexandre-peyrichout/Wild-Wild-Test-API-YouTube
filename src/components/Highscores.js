@@ -1,7 +1,5 @@
 import React from 'react';
 import './Highscores.css';
-import Burger from './Burger';
-import RulesBtn from './Home/RulesBtn';
 
 class Highscores extends React.Component {
   componentDidMount() {
