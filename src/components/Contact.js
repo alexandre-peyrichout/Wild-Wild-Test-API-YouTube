@@ -1,6 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import logo from '../assets/img/logo.png';
+import { Link } from 'react-router-dom';
 
 class Contact extends React.Component {
   render() {
@@ -11,7 +12,12 @@ class Contact extends React.Component {
           <p>Hi (pseudo), contact us !</p>
           <input type="email" placeholder="write your email" />
           <textarea className="textarea" type="textarea" placeholder="Tell us a joke"></textarea>
-          <button>SEND !</button>
+          <div className="buttons-container">
+            <Link to="/">
+              <button className="button-back">BACK</button>
+            </Link>
+            <button className="button-send">SEND !</button>
+          </div>
         </div>
       </div>
     );
