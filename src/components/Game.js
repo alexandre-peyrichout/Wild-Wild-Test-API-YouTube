@@ -118,7 +118,6 @@ class Game extends React.Component {
       }
     }
     return console.log(answerResult);
-    event.preventDefault();
   }
 
   render() {
@@ -151,7 +150,7 @@ class Game extends React.Component {
           </div>
         </div>
 
-        <p className="nick">Nickname</p>
+        <p className="nick">{this.props.match.params.nickname}</p>
 
         <Score />
 

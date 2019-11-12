@@ -1,43 +1,21 @@
 import React from 'react';
 import './NickName.css';
-import PlayBtn from '../Home/PlayBtn';
 
-const MAX_LENGTH = 50;
+const NickName = props => {
+  return (
+    <div>
+      <form>
+        <input
+          placeholder="Write a name"
+          type="text"
+          id="name"
+          onChange={event => props.handleChange(event)}
+          className="NickName"
+          value={props.nickname}
+        />
+      </form>
+    </div>
+  );
+};
 
-export default class NickName extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { name: '', nameValidate: false };
-  }
-
-  handleChange = event => {
-    event.target.value.length <= MAX_LENGTH && this.setState({ name: event.target.value });
-  };
-
-  handleSubmit = e => {
-    e.preventDefault();
-    e.stopPropagation();
-    const newNameValidate = !this.state.nameValidate;
-    this.state.name !== '' && this.setState({ nameValidate: newNameValidate });
-  };
-
-  render() {
-    console.log('nameValidate: ' + this.state.nameValidate);
-    return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <input
-            placeholder="Write a name"
-            type="text"
-            id="name"
-            onChange={this.handleChange}
-            className="NickName"
-          />
-
-          {/* { <input type="submit" value="Envoyer" /> } */}
-          {this.state.nameValidate && <PlayBtn />}
-        </form>
-      </div>
-    );
-  }
-}
+export default NickName;
