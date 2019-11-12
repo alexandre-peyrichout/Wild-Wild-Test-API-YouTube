@@ -26,7 +26,8 @@ class Game extends React.Component {
           origin: 'http://localhost:3000'
         }
       },
-      answer: ''
+      answer: '',
+      answerState: false
     };
     this.changeSong = this.changeSong.bind(this);
     this._onPlay = this._onPlay.bind(this);
@@ -88,9 +89,10 @@ class Game extends React.Component {
     const templateArray = ['1', '2', 'alain chabat'];
     for (let i = 0; i < templateArray.length; i++) {
       if (this.state.answer === templateArray[i]) {
-        return console.log('GGWP');
+        this.setState({ answerState: true });
+        return console.log('gg ez');
       } else {
-        return console.log(`T'es nul connard, vas jouer a fortnite`);
+        return console.log(`x9 ty`);
       }
     }
     event.preventDefault();
