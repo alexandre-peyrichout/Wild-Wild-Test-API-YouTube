@@ -36,6 +36,7 @@ class Game extends React.Component {
     this.changeSong = this.changeSong.bind(this);
     this._onPlay = this._onPlay.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.handleSkip = this.handleSkip.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -105,6 +106,10 @@ class Game extends React.Component {
     console.log(this.state.answer);
   }
 
+  handleSkip(event) {
+    this.setState({ answerState: true, numberCount: 'Go' });
+  }
+
   handleSubmit(event) {
     let answerResult = 'NUL';
     for (let i = 0; i < this.state.possibleAnswers.length; i++) {
@@ -142,7 +147,7 @@ class Game extends React.Component {
           <Answer parentMethodAnswer={this.handleChange} parentAnswer={this.state.answer} />
 
           <div className="row">
-            <SkipBtn />
+            <SkipBtn parentMethodSkip={this.handleSkip} />
 
             <ValidateBtn
               parentMethodValidate={this.handleSubmit}
