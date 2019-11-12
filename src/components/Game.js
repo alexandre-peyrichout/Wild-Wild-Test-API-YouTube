@@ -7,11 +7,14 @@ import Answer from './Game/Answer';
 import ValidateBtn from './Game/ValidateBtn';
 import './Game.css';
 import Title from './Home/Title';
+import { arrThemes } from '../data/Playlists';
 
 class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      turn: 0,
+      theme: '',
       class_parent: 'game-parent',
       fakeDiv: 'fake-div',
       numberCount: 'Go',
@@ -37,14 +40,24 @@ class Game extends React.Component {
 
   componentDidMount() {
     setTimeout(() => this.setState({ class_parent: 'fullvh' }), 100);
+    this.setState({ theme: this.props.match.params.theme });
   }
 
-  changeSong(video) {
+  changeSong() {
     if (this.state.numberCount === 'Go') {
+      this.setState({ turn: this.state.turn + 1 });
+      const { theme, turn } = this.state;
+      let activeArr = arrThemes.filter(el => theme === Object.keys(el)[0]);
+      activeArr = activeArr[0];
+      activeArr = Object.values(activeArr)[0];
+      activeArr = activeArr[turn];
+      console.log(activeArr);
+      // activeArr.map(child => console.log(child));
+
       this.setState({
         fakeDiv: 'fake-div-loading',
         numberCount: 'Loading',
-        videoId: video,
+        videoId: activeArr.url,
         classCount: 'loading'
       });
     }

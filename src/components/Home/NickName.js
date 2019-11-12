@@ -17,14 +17,11 @@ export default class NickName extends React.Component {
   handleSubmit = e => {
     e.preventDefault();
     e.stopPropagation();
-    console.log('test');
-    console.log(this.state.name);
     const newNameValidate = !this.state.nameValidate;
     this.state.name !== '' && this.setState({ nameValidate: newNameValidate });
   };
 
   render() {
-    let max = this.state.name.length >= MAX_LENGTH;
     console.log('nameValidate: ' + this.state.nameValidate);
     return (
       <div>
