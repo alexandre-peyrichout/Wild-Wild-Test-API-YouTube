@@ -25,10 +25,13 @@ class Game extends React.Component {
           enablejsapi: 1,
           origin: 'http://localhost:3000'
         }
-      }
+      },
+      answer: ''
     };
     this.changeSong = this.changeSong.bind(this);
     this._onPlay = this._onPlay.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentDidMount() {
@@ -76,6 +79,23 @@ class Game extends React.Component {
       : this.setState({ numberCount: this.state.numberCount }); // false : ne pas toucher
   }
 
+  handleChange(event) {
+    this.setState({ answer: event.target.value });
+    console.log(this.state.answer);
+  }
+
+  handleSubmit(event) {
+    const templateArray = ['1', '2', 'alain chabat'];
+    for (let i = 0; i < templateArray.length; i++) {
+      if (this.state.answer === templateArray[i]) {
+        return console.log('GGWP');
+      } else {
+        return console.log(`T'es nul connard, vas jouer a fortnite`);
+      }
+    }
+    event.preventDefault();
+  }
+
   render() {
     return (
       <div className={this.state.class_parent}>
@@ -94,12 +114,15 @@ class Game extends React.Component {
         </div>
 
         <div className="landscape-mode">
-          <Answer />
+          <Answer parentMethodAnswer={this.handleChange} parentAnswer={this.state.answer} />
 
           <div className="row">
             <SkipBtn />
 
-            <ValidateBtn />
+            <ValidateBtn
+              parentMethodValidate={this.handleSubmit}
+              parentAnswer={this.state.answer}
+            />
           </div>
         </div>
 

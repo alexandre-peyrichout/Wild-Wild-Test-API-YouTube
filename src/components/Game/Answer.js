@@ -1,24 +1,9 @@
 import React from 'react';
-import Game from '../Game.js';
+import Game from '../Game';
 
-class Answer extends Game {
+class Answer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      answer: ''
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({ answer: event.target.value });
-    console.log(this.state.answer);
-  }
-
-  handleSubmit(event) {
-    alert('Le nom a été soumis : ' + this.state.answer);
-    event.preventDefault();
   }
 
   render() {
@@ -29,11 +14,10 @@ class Answer extends Game {
             className="input-answer"
             type="text"
             name="answer"
-            value={this.state.answer}
-            onChange={this.handleChange}
+            value={this.props.parentAnswer}
+            onChange={this.props.parentMethodAnswer}
             placeholder="Write your answer here"
           />
-          <button onClick={this.handleSubmit}>VALIDER</button>
         </label>
       </div>
     );

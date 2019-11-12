@@ -1,7 +1,13 @@
 import React from 'react';
 
-const ValidateBtn = () => {
-  return <button className="validate">OK</button>;
-};
+class ValidateBtn extends React.Component {
+  render() {
+    return (
+      <button onClick={this.props.parentMethodValidate} className="validate">
+        OK
+      </button>
+    );
+  }
+}
 
 export default ValidateBtn;
