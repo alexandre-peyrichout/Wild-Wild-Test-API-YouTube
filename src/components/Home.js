@@ -13,7 +13,8 @@ class Home extends React.Component {
     super(props);
     this.state = {
       idSongs: '',
-      nickname: ''
+      nickname: '',
+      nickLabel: 'Wild Wild Test'
     };
     this.goToPlaylist = this.goToPlaylist.bind(this);
     this.handleChange = this.handleChange.bind(this);

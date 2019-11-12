@@ -128,7 +128,7 @@ class Game extends React.Component {
   render() {
     return (
       <div className={this.state.class_parent}>
-        <Title />
+        <Title theme={this.state.theme} />
 
         <div className="fake-div-parent">
           {/*fake divs importantes pour l'anim du loading*/}
