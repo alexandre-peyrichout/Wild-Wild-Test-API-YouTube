@@ -80,23 +80,31 @@ class Game extends React.Component {
     return (
       <div className={this.state.class_parent}>
         <Title />
+
         <div className="fake-div-parent">
           {/*fake divs importantes pour l'anim du loading*/}
+
           <div className={this.state.fakeDiv}></div>
+
           <CountDown
             onClick={() => this.changeSong('ZHapXKq0yOY')}
             className={this.state.classCount}
             number={this.state.numberCount}
           />
         </div>
+
         <div className="landscape-mode">
           <Answer />
+
           <div className="row">
             <SkipBtn />
+
             <ValidateBtn />
           </div>
         </div>
+
         <p className="nick">Nickname</p>
+
         <Score />
 
         <YouTube
