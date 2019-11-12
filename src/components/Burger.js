@@ -48,7 +48,11 @@ class Burger extends React.Component {
                 <span>HIGHSCORES</span>
               </div>
             </NavLink>
-            <NavLink activeClassName="active" className="Burger-Link" to="/Contact">
+            <NavLink
+              activeClassName="active"
+              className="Burger-Link"
+              to={`/Contact/${this.props.nickname === '' ? 'guest' : this.props.nickname}`}
+            >
               <div className="Burger-Div-Content-Link">
                 <img
                   alt="bullet"

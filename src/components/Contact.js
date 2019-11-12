@@ -9,7 +9,10 @@ class Contact extends React.Component {
       <div class="container-form">
         <div class="contactform">
           <img src={logo} alt="logo" />
-          <p>Hi (pseudo), contact us !</p>
+          <p>
+            Hi {this.props.match.params.nickname ? this.props.match.params.nickname : 'guest'},
+            contact us !
+          </p>
           <input type="email" placeholder="write your email" />
           <textarea className="textarea" type="textarea" placeholder="Tell us a joke"></textarea>
           <div className="buttons-container">

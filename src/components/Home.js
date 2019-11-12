@@ -12,9 +12,11 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      idSongs: ''
+      idSongs: '',
+      nickname: ''
     };
     this.goToPlaylist = this.goToPlaylist.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   goToPlaylist(value) {
@@ -23,17 +25,23 @@ class Home extends React.Component {
     });
   }
 
+  handleChange(event) {
+    this.setState({
+      nickname: event.target.value
+    });
+  }
+
   render() {
     return (
       <div className="home">
-        <Burger />
+        <Burger nickname={this.state.nickname} />
         <RulesBtn />
         <Title />
         <Logo />
         <div className="home-nickname-play">
-          <NickName />
+          <NickName nickname={this.state.nickname} handleChange={this.handleChange} />
           <ChooseTheme parentMethodChoosePlaylist={this.goToPlaylist} value={this.state.idSongs} />
-          <PlayBtn theme={this.state.idSongs} />
+          <PlayBtn theme={this.state.idSongs} nickname={this.state.nickname} />
         </div>
       </div>
     );
