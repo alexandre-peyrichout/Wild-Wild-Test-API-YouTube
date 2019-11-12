@@ -343,7 +343,7 @@ export const arrThemes = [
         length: '',
         url: '2tch4J_pP9o',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 2,
@@ -353,7 +353,7 @@ export const arrThemes = [
         length: '',
         url: 'fro6je9L5kg',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 3,
@@ -363,7 +363,7 @@ export const arrThemes = [
         length: '',
         url: 'VLW1ieY4Izw',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 4,
@@ -373,7 +373,7 @@ export const arrThemes = [
         length: '',
         url: 'agV86_dFVOE',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 5,
@@ -383,7 +383,7 @@ export const arrThemes = [
         length: '',
         url: 'AyDi8kI9gp0',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 6,
@@ -393,7 +393,7 @@ export const arrThemes = [
         length: '',
         url: 'NqM032dnPtk',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 7,
@@ -403,7 +403,7 @@ export const arrThemes = [
         length: '',
         url: 'XveHckJdYvY',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 8,
@@ -413,7 +413,7 @@ export const arrThemes = [
         length: '',
         url: '3fEg1r6SH9Q',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 9,
@@ -423,7 +423,7 @@ export const arrThemes = [
         length: '',
         url: 'Ph4MUCD90Yo',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 10,
@@ -433,7 +433,7 @@ export const arrThemes = [
         length: '',
         url: 'QIjKijhv1OU',
         pic: '',
-        answers: []
+        answers: ['vodka']
       }
     ]
   },
