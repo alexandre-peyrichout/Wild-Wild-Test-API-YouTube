@@ -30,6 +30,7 @@ class Game extends React.Component {
         }
       },
       answer: '',
+      possibleAnswers: [],
       answerState: false
     };
     this.changeSong = this.changeSong.bind(this);
@@ -45,13 +46,14 @@ class Game extends React.Component {
 
   changeSong() {
     if (this.state.numberCount === 'Go') {
-      this.setState({ turn: this.state.turn + 1 });
+      this.setState({ answerState: false, turn: this.state.turn + 1 });
       const { theme, turn } = this.state;
       let activeArr = arrThemes.filter(el => theme === Object.keys(el)[0]);
       activeArr = activeArr[0];
       activeArr = Object.values(activeArr)[0];
       activeArr = activeArr[turn];
-      console.log(activeArr);
+      this.setState({ possibleAnswers: activeArr.answers });
+      console.log(activeArr.answers);
       // activeArr.map(child => console.log(child));
 
       this.setState({
@@ -84,13 +86,18 @@ class Game extends React.Component {
   }
 
   tick() {
-    this.state.isPlaying // si le props startCount défini dans Game.js...
-      ? this.state.numberCount <= 1 || this.state.numberCount === 'cry' // true : si le state number est inférieur ou égal à 0...
-        ? this.setState({
-            numberCount: 'cry'
-          }) // true : ne pas toucher
-        : this.setState({ numberCount: this.state.numberCount - 1 }) // false : nombre - 1
-      : this.setState({ numberCount: this.state.numberCount }); // false : ne pas toucher
+    if (this.state.answerState === true) {
+      clearInterval(this.timerID);
+      this.setState({ classCount: 'default' });
+    } else {
+      this.state.isPlaying // si le props startCount défini dans Game.js...
+        ? this.state.numberCount <= 1 || this.state.numberCount === 'cry' // true : si le state number est inférieur ou égal à 0...
+          ? this.setState({
+              numberCount: 'cry'
+            }) // true : ne pas toucher
+          : this.setState({ numberCount: this.state.numberCount - 1 }) // false : nombre - 1
+        : this.setState({ numberCount: this.state.numberCount });
+    } // false : ne pas toucher
   }
 
   handleChange(event) {
@@ -99,15 +106,18 @@ class Game extends React.Component {
   }
 
   handleSubmit(event) {
-    const templateArray = ['1', '2', 'alain chabat'];
-    for (let i = 0; i < templateArray.length; i++) {
-      if (this.state.answer === templateArray[i]) {
+    let answerResult = 'NUL';
+    for (let i = 0; i < this.state.possibleAnswers.length; i++) {
+      if (this.state.answer === this.state.possibleAnswers[i]) {
         this.setState({ answerState: true });
-        return console.log('gg ez');
+        answerResult = 'YES';
+        this.setState({ numberCount: 'Go' });
+
+        return console.log(answerResult);
       } else {
-        return console.log(`x9 ty`);
       }
     }
+    return console.log(answerResult);
     event.preventDefault();
   }
 
