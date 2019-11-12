@@ -33,7 +33,7 @@ class Home extends React.Component {
         <div className="home-nickname-play">
           <NickName />
           <ChooseTheme parentMethodChoosePlaylist={this.goToPlaylist} value={this.state.idSongs} />
-          <PlayBtn />
+          <PlayBtn theme={this.state.idSongs} />
         </div>
       </div>
     );

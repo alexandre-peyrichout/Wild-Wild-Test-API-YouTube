@@ -1,5 +1,4 @@
 import React from 'react';
-import AriaModal from 'react-aria-modal';
 import './Rules.css';
 
 class Rules extends React.Component {

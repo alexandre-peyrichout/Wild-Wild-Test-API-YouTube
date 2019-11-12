@@ -3,12 +3,12 @@ import Select from 'react-select';
 import './ChooseTheme.css';
 
 const options = [
-  { value: 'tekno', label: 'TEKNO BOOM BOOM' },
-  { value: 'teenmovies', label: 'TEEN MOVIES' },
-  { value: 'scarymovies', label: 'SCARY MOVIES' },
-  { value: 'wildwildwest', label: 'WILD WILD WEST' },
-  { value: 'retrogaming', label: 'RETRO GAMING' },
-  { value: 'hardbass', label: 'сука блядь хардбасс' }
+  { value: 'wildWildWest', label: 'Wild wild west' },
+  { value: 'teenMovies', label: 'Teen Movies' },
+  { value: 'newSeries', label: 'New Series' },
+  { value: 'oldSeries', label: 'Old Series' },
+  { value: 'leagueChampions', label: 'League Champions' },
+  { value: 'hardBass', label: 'Cука блядь хардбасс' }
 ];
 
 class ChooseTheme extends Component {
@@ -19,14 +19,11 @@ class ChooseTheme extends Component {
   }
 
   handleChange(event) {
-    console.log(event.value);
     this.props.parentMethodChoosePlaylist(event.value);
-    if (event.value === 'hardbass') {
+    if (event.value === 'hardBass') {
       document.getElementById('chooseTheme').style.animation =
         'hardbass .33s infinite ease-in-out running';
-      console.log('CYKA');
     } else {
-      console.log('blyet');
       document.getElementById('chooseTheme').style.animation = 'hardbass .3s infinite paused';
     }
   }
