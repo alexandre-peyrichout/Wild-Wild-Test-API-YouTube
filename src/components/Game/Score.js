@@ -12,7 +12,7 @@ class Score extends React.Component {
         <div className={this.props.transferAnswerState ? 'ball spring' : 'ball'}>
           <p>Score: {this.props.transferScore} </p>
         </div>
-        <p className="score-tracks-number">Song {this.props.transferTurnSong} / 10</p>
+        <p className="score-tracks-number">Turn {this.props.transferTurnSong} / 10</p>
       </div>
     );
   }
