@@ -644,5 +644,146 @@ export const arrThemes = [
         answers: []
       }
     ]
+  },
+  {
+    classics: [
+      {
+        id: 1,
+        name: 'Star Wars - Opening Theme',
+        author: 'John Williams',
+        year: '1977',
+        length: '',
+        url: '_D0ZQPqeJkk#t=15',
+        pic:
+          'https://lh3.googleusercontent.com/8o1EHNh--H1mSVOPp_gXNqh86Xuf5UdgAnLd-kTNcUoMCYapY-uqCh268KtshWa-6qr6=w720-h405-rw',
+        answers: ['starwars', 'StarWars', 'Star Wars', 'star wars']
+      },
+      {
+        id: 2,
+        name: "Pirates of the Caribbean - He's a Pirate",
+        author: 'Klaus Badelt, Hans Zimmer, Geoff Zanelli',
+        year: '2003',
+        length: '',
+        url: 'zcQmM0HjMH8',
+        pic:
+          'https://cdn1.thr.com/sites/default/files/imagecache/768x433/2017/04/screen_shot_2017-04-05_at_1.18.07_pm.png',
+        answers: [
+          'pirates des caraibes',
+          'pirates des caraïbes',
+          'Pirates des Caraïbes',
+          'pirates of the caribbean',
+          'Pirates of the Caribbean'
+        ]
+      },
+      {
+        id: 3,
+        name: 'Pokémon - Générique',
+        author: 'Jacques Siatem, Alexandre Gibert',
+        year: '1999',
+        length: '',
+        url: 'jVm1NbrXaXc',
+        pic: 'https://www.pokepedia.fr/images/f/fb/G%C3%A9n%C3%A9rique1.png',
+        answers: ['pokemon', 'Pokémon', 'pokémon', 'Pokemon']
+      },
+      {
+        id: 4,
+        name: 'Game of Thrones - Main Theme',
+        author: 'Ramin Djawadi',
+        year: '2011',
+        length: '',
+        url: 'TZE9gVF1QbA',
+        pic:
+          'https://www.sortiraparis.com/images/80/1665/453986-game-of-thrones-diffusion-du-dernier-episode-au-grand-rex-de-paris.jpg',
+        answers: [
+          'gameofthrones',
+          'game of thrones',
+          'Game of Thrones',
+          'Game of thrones',
+          'GoT',
+          'got'
+        ]
+      },
+      {
+        id: 5,
+        name: "Le Roi Lion - l'histoire de la vie",
+        author: 'Debbie Davis',
+        year: '1994',
+        length: '',
+        url: 'w9u21s1wuok',
+        pic: 'https://img2.thejournal.ie/inline/3675483/original/?width=630&version=3675483',
+        answers: ['le roi lion', 'Le Roi Lion', "l'histoire de la vie", "L'Histoire de la vie"]
+      },
+      {
+        id: 6,
+        name: 'The Lord of the Rings - The Bridge of Khazad Dum',
+        author: 'Howard Shore',
+        year: '2001',
+        length: '',
+        url: 'NUIZvAe3RBg',
+        pic: 'https://gortoncenter.org/wp-content/uploads/2018/03/LordOfTheRings.jpg',
+        answers: [
+          'lotr',
+          'le seigneur des anneaux',
+          'Le Seigneur des Anneaux',
+          'Lord of the Rings',
+          'Le seigneur des anneaux'
+        ]
+      },
+      {
+        id: 7,
+        name: "Harry Potter - Hedwig's Theme",
+        author: 'John Williams',
+        year: '2001',
+        length: '',
+        url: 'Htaj3o3JD8I',
+        pic: 'https://www.focusur.fr/wp-content/uploads/2019/09/harry-potter-personnage-.jpg',
+        answers: [
+          'harry potter',
+          'HarryPotter',
+          'harrypotter',
+          'Harry Potter',
+          'Henri Podbeurre',
+          'henri podbeurre'
+        ]
+      },
+      {
+        id: 8,
+        name: 'Ghostbusters',
+        author: 'Ray Parker Jr.',
+        year: '1984',
+        length: '',
+        url: 'm9We2XsVZfc',
+        pic: 'https://m.media-amazon.com/images/I/61ztrQFQB8L._SS500_.jpg',
+        answers: [
+          'Ghostbusters',
+          'ghostbusters',
+          'sos fantomes',
+          'SOS Fantômes',
+          'SOS fantômes',
+          'SOS fantomes',
+          'S.O.S. Fantômes'
+        ]
+      },
+      {
+        id: 9,
+        name: 'James Bond',
+        author: 'Monty Norman',
+        year: '1963',
+        length: '',
+        url: 'ye8KvYKn9-0',
+        pic: 'https://art-sheep.com/wp-content/uploads/2015/03/jamesbond99.jpg',
+        answers: ['james bond', 'James Bond', '007']
+      },
+      {
+        id: 10,
+        name: 'Jurassic Park',
+        author: 'John Williams',
+        year: '1993',
+        length: '',
+        url: 'D8zlUUrFK-M&t=154',
+        pic: 'https://images-na.ssl-images-amazon.com/images/I/513L7EVljEL._SX466_.jpg',
+        answers: ['jurassic park', 'Jurassic Park', 'jurassicpark', 'JurassicPark']
+      }
+    ]
   }
 ];
