@@ -359,7 +359,6 @@
 
 @media screen and (max-width: 1100px) {
   .result-visible {
-    height: 40vh;
     background-color: rgba(0, 0, 0, 0.6);
     left: auto;
   }
@@ -413,19 +412,15 @@
 }
 
 .result-appear {
-  animation: resultAppear 0.6s ease-in-out;
+  animation: resultAppear 0.6s ease-in-out forwards;
 }
 
 @keyframes resultAppear {
-  0% {
+  from {
     height: 0vh;
     opacity: 0;
   }
-  25% {
-    height: 20vh;
-    opacity: 0.7;
-  }
-  50% {
+  to {
     height: 40vh;
     opacity: 1;
   }
