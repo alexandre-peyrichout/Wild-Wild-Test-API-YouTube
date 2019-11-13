@@ -20,10 +20,10 @@ const Rules = props => {
             Choose a theme
             <br />
             <span class="yellow"> &#9733;</span> <br />
-            You have 30 sec to guess
+            30 seconds to guess
             <br />
             <span class="yellow"> &#9733;</span> <br />
-            10 songs par game
+            10 turns
             <br />
             <span class="yellow"> &#9733;</span>
             <br />
