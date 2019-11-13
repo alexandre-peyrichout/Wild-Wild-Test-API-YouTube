@@ -107,7 +107,7 @@ class Game extends React.Component {
   }
 
   tick() {
-    if (this.state.answerState === true) {
+    if (this.state.answerState === true || typeof this.state.numberCount !== 'number') {
       clearInterval(this.timerID);
       this.setState({ classCount: 'default' });
       this.setState({ score: this.state.scoreTemp + this.state.score }); //cumulation du score
