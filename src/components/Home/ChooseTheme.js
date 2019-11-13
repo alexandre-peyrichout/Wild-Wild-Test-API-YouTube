@@ -4,7 +4,7 @@ import './ChooseTheme.css';
 
 const options = [
   { value: 'classics', label: 'Classics Movies & Series' },
-  { value: 'wildWildWest', label: 'Wild wild west' },
+  { value: 'wildWildWest', label: 'Wild Wild West' },
   { value: 'teenMovies', label: 'Teen Movies' },
   { value: 'newSeries', label: 'New Series' },
   { value: 'oldSeries', label: 'Old Series' },
