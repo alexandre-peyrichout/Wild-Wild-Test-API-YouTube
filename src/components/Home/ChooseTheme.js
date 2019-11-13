@@ -3,12 +3,12 @@ import Select from 'react-select';
 import './ChooseTheme.css';
 
 const options = [
+  { value: 'classics', label: 'Classics Movies & Series' },
   { value: 'wildWildWest', label: 'Wild wild west' },
   { value: 'teenMovies', label: 'Teen Movies' },
   { value: 'newSeries', label: 'New Series' },
   { value: 'oldSeries', label: 'Old Series' },
   { value: 'leagueChampions', label: 'League Champions' },
-  { value: 'classics', label: 'Classics Movies & Series' },
   { value: 'hardBass', label: 'Cука блядь хардбасс' }
 ];
 

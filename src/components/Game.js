@@ -76,7 +76,6 @@ class Game extends React.Component {
         currentAuthor: activeArr.author,
         currentYear: activeArr.year
       });
-      // activeArr.map(child => console.log(child));
 
       this.setState({
         fakeDiv: 'fake-div-loading',
@@ -85,7 +84,6 @@ class Game extends React.Component {
         classCount: 'loading'
       });
     }
-    console.log(this.state.turn);
   }
 
   _onReady(event) {
@@ -94,7 +92,6 @@ class Game extends React.Component {
   }
 
   _onPlay() {
-    console.log('playing');
     this.setState({
       fakeDiv: 'fake-div-playing',
       numberCount: 30,
@@ -126,9 +123,7 @@ class Game extends React.Component {
   }
 
   handleChange(event) {
-    console.log(event);
     this.setState({ answer: event.target.value });
-    console.log(this.state.answer);
   }
 
   handleSkip(event) {
@@ -163,7 +158,6 @@ class Game extends React.Component {
         setTimeout(function() {
           document.getElementById('input-answer').classList.remove('goodAnswer');
         }, 1000);
-        return console.log(answerResult);
       } else {
       }
     }
@@ -173,11 +167,9 @@ class Game extends React.Component {
         document.getElementById('input-answer').classList.remove('wrongAnswer');
       }, 1000);
     }
-    return console.log(answerResult);
   }
 
   render() {
-    // console.log(this.state.score)
     return (
       <div className={this.state.class_parent}>
         <Title theme={this.state.theme} />

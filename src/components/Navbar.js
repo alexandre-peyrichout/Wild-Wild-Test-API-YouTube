@@ -7,16 +7,6 @@ export default () => {
   return (
     <div className="Navbar">
       <ul className="myList">
-        {/* <li>
-          <NavLink activeClassName="active" exact to="/">
-            Home
-          </NavLink>
-        </li> */}
-        {/* <li>
-          <NavLink activeClassName="active" to="/Game">
-            Game
-          </NavLink>
-        </li> */}
         <li>
           <NavLink activeClassName="active" to="/Highscores">
             Highscores
