@@ -9,25 +9,25 @@ const Rules = props => {
           <div className="Rule-Title">RULES</div>
           <div className="Rule-text">
             <p className="Rule-text-phrase">
-              Bienvenue sur le Wild Wild Test !<br />
-              Le blind-test du Far West !
+              Welcome to the Wild Wild Test !<br />
+              Guess right or die as a loser !
             </p>
             <br />
             <span class="yellow"> &#9733;</span> <br />
-            Rentre ton pseudo
+            Enter a nickname
             <br />
             <span class="yellow"> &#9733;</span> <br />
-            Choisis ton thème
+            Choose a theme
             <br />
             <span class="yellow"> &#9733;</span> <br />
-            Tu as 30 sec par musique
+            You have 30 sec to guess
             <br />
             <span class="yellow"> &#9733;</span> <br />
-            10 musiques par thème
+            10 songs par game
             <br />
             <span class="yellow"> &#9733;</span>
             <br />
-            Le score varie en fonction des réponses trouvées.
+            Your score depends on your speed
             <br />
             <span class="yellow"> &#9733;</span>
             <br />
