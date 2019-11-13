@@ -21,3 +21,9 @@
     margin: auto auto 15vh auto;
   }
 }
+
+@media screen and (min-height: 700px) {
+  .home {
+    padding-bottom: 70px;
+  }
+}
