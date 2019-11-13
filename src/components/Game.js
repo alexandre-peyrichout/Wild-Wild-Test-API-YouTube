@@ -141,11 +141,9 @@ class Game extends React.Component {
   }
 
   handleSubmit(event) {
-    let answerResult = 'NUL';
     for (let i = 0; i < this.state.possibleAnswers.length; i++) {
       if (this.state.answer === this.state.possibleAnswers[i]) {
         this.setState({ answerState: true });
-        answerResult = 'YES';
         if (this.state.turn === 10) {
           this.setState({
             numberCount: 'End'
