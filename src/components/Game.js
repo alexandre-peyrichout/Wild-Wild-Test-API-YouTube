@@ -9,6 +9,7 @@ import Result from './Game/Result';
 import './Game.css';
 import Title from './Home/Title';
 import { arrThemes } from '../data/Playlists';
+import EndGame from './Game/EndGame';
 
 class Game extends React.Component {
   constructor(props) {
@@ -39,7 +40,8 @@ class Game extends React.Component {
       currentPic: '',
       currentAuthor: '',
       currentYear: '',
-      skipAnswer: false
+      skipAnswer: false,
+      isGameOver: false
     };
     this.changeSong = this.changeSong.bind(this);
     this._onPlay = this._onPlay.bind(this);
@@ -54,6 +56,10 @@ class Game extends React.Component {
   }
 
   changeSong() {
+    if (this.state.numberCount === 'End') {
+      this.setState({ isGameOver: true });
+    }
+
     if (this.state.numberCount === 'Go' || this.state.numberCount === 'Next') {
       this.setState({ answerState: false, turn: this.state.turn + 1 });
 
@@ -125,8 +131,17 @@ class Game extends React.Component {
   }
 
   handleSkip(event) {
-    this.setState({ answerState: true, numberCount: 'Next', skipAnswer: false });
-    this.setState({ scoreTemp: 0 });
+    if (this.state.turn === 10) {
+      this.setState({
+        answerState: true,
+        numberCount: 'End',
+        skipAnswer: false
+      });
+      this.setState({ scoreTemp: 0 });
+    } else {
+      this.setState({ answerState: true, numberCount: 'Next', skipAnswer: false });
+      this.setState({ scoreTemp: 0 });
+    }
   }
 
   handleSubmit(event) {
@@ -135,7 +150,14 @@ class Game extends React.Component {
       if (this.state.answer === this.state.possibleAnswers[i]) {
         this.setState({ answerState: true });
         answerResult = 'YES';
-        this.setState({ numberCount: 'Next' });
+        if (this.state.turn === 10) {
+          this.setState({
+            numberCount: 'End'
+          });
+        } else {
+          this.setState({ numberCount: 'Next' });
+        }
+
         document.getElementById('input-answer').classList.add('goodAnswer');
         setTimeout(function() {
           document.getElementById('input-answer').classList.remove('goodAnswer');
@@ -158,7 +180,11 @@ class Game extends React.Component {
     return (
       <div className={this.state.class_parent}>
         <Title theme={this.state.theme} />
-
+        <EndGame
+          toggleEnd={this.state.isGameOver}
+          nickname={this.props.match.params.nickname}
+          score={this.state.score}
+        />
         <Result
           name={this.state.currentSong}
           author={this.state.currentAuthor}
