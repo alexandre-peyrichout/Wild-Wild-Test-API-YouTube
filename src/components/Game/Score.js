@@ -2,17 +2,20 @@ import React from 'react';
 import './Score.css';
 
 class Score extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="score-show">
         <div className={this.props.transferAnswerState ? 'ball spring' : 'ball'}>
-          <p>Score: {this.props.transferScore} </p>
+          <p>
+            <span className="label-score">Score: </span>
+            {this.props.transferScore}{' '}
+          </p>
         </div>
-        <p className="score-tracks-number">Turn {this.props.transferTurnSong} / 10</p>
+        <p className="score-tracks-number">
+          <span className="label-score">Turn: </span>
+          {this.props.transferTurnSong}
+          <span className="label-score"> / 10</span>
+        </p>
       </div>
     );
   }
