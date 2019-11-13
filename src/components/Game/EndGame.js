@@ -5,8 +5,8 @@ class EndGame extends React.Component {
   render() {
     return (
       <div className={this.props.toggleEnd ? 'end-game' : 'end-game-none'}>
-        <p className="end-game-pseudo">Bien joué {this.props.nickname} !</p>
-        <p className="end-game-score">Ton score est : {this.props.score}</p>
+        <p className="end-game-pseudo">Good job {this.props.nickname} !</p>
+        <p className="end-game-score">Your score is : {this.props.score}</p>
         <div className="end-game-button">
           <Link to="/">
             <button>HOME</button>

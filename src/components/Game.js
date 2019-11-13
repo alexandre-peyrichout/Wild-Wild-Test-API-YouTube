@@ -112,11 +112,10 @@ class Game extends React.Component {
       this.setState({ score: this.state.scoreTemp + this.state.score }); //cumulation du score
     } else {
       this.state.isPlaying // si le props startCount défini dans Game.js...
-        ? this.state.numberCount <= 1 || this.state.numberCount === 'cry' // true : si le state number est inférieur ou égal à 0...
-          ? this.setState({
-              numberCount: 'cry'
-            }) // true : ne pas toucher
-          : this.setState({ numberCount: this.state.numberCount - 1 }) // false : nombre - 1
+        ? this.state.numberCount <= 1 || this.state.numberCount === 'Next' // true : si le state number est inférieur ou égal à 0...
+          ? this.handleSkip()
+          : // true : ne pas toucher
+            this.setState({ numberCount: this.state.numberCount - 1 }) // false : nombre - 1
         : this.setState({ numberCount: this.state.numberCount });
       this.setState({ scoreTemp: parseInt(this.state.numberCount) || 0 }); //memorise le compteur pour le score et mets 0 si string au lieu de number
     } // false : ne pas toucher

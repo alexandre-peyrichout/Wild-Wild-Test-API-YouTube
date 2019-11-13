@@ -151,12 +151,12 @@
   cursor: pointer;
 }
 
-.default,
-.playing {
+.default {
   font-size: calc(1rem + 3vh);
 }
 
 .playing {
+  font-size: calc(3rem + 3vh);
   animation: playing linear 30s forwards;
 }
 
@@ -334,6 +334,7 @@
 }
 
 .result-visible {
+  box-shadow: -1px -5px 50px black;
   display: flex;
   max-width: 340px;
   flex-direction: column;
@@ -342,8 +343,8 @@
   bottom: 0;
   right: 2vw;
   background-color: rgba(0, 0, 0, 0.3);
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
+  border-top-left-radius: 5vh;
+  border-top-right-radius: 5vh;
   overflow: hidden;
   color: white;
   text-shadow: 2px 2px 4px #000;
@@ -392,8 +393,9 @@
   border-left: 6px solid #000;
   border-right: 6px solid #000;
   border-top: 6px solid #000;
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
+  border-top-left-radius: 5vh;
+  border-top-right-radius: 5vh;
+  /* box-shadow: -1px -5px 50px black; */
 }
 
 .result-appear {
