@@ -49,6 +49,7 @@ class Game extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSkip = this.handleSkip.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleEnter = this.handleEnter.bind(this);
   }
 
   componentDidMount() {
@@ -183,6 +184,10 @@ class Game extends React.Component {
       }, 1000);
     }
   }
+  handleEnter() {
+    this.handleSubmit();
+    this.changeSong();
+  }
 
   render() {
     return (
@@ -218,7 +223,7 @@ class Game extends React.Component {
           <Answer
             parentMethodAnswer={this.handleChange}
             parentAnswer={this.state.answer}
-            onKeyPressed={this.handleSubmit}
+            onKeyPressed={this.handleEnter}
           />
 
           <div className="row">
@@ -227,6 +232,7 @@ class Game extends React.Component {
             <ValidateBtn
               parentMethodValidate={this.handleSubmit}
               parentAnswer={this.state.answer}
+              onKeyPressed={this.handleEnter}
             />
           </div>
         </div>
