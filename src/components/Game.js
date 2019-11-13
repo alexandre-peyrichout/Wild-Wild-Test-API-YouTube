@@ -15,6 +15,7 @@ class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      wasItGoodAnswer: false,
       turn: 0,
       theme: '',
       class_parent: 'game-parent',
@@ -126,23 +127,33 @@ class Game extends React.Component {
   }
 
   handleSkip(event) {
-    if (this.state.turn === 10) {
-      this.setState({
-        answerState: true,
-        numberCount: 'End',
-        skipAnswer: false
-      });
-      this.setState({ scoreTemp: 0 });
+    if (this.state.numberCount === 'Next') {
+      return;
     } else {
-      this.setState({ answerState: true, numberCount: 'Next', skipAnswer: false });
-      this.setState({ scoreTemp: 0 });
+      if (this.state.turn === 10) {
+        this.setState({
+          answerState: true,
+          numberCount: 'End',
+          skipAnswer: false,
+          wasItGoodAnswer: false
+        });
+        this.setState({ scoreTemp: 0 });
+      } else {
+        this.setState({
+          answerState: true,
+          numberCount: 'Next',
+          skipAnswer: false,
+          wasItGoodAnswer: false
+        });
+        this.setState({ scoreTemp: 0 });
+      }
     }
   }
 
   handleSubmit(event) {
     for (let i = 0; i < this.state.possibleAnswers.length; i++) {
       if (this.state.answer === this.state.possibleAnswers[i]) {
-        this.setState({ answerState: true });
+        this.setState({ answerState: true, wasItGoodAnswer: true });
         if (this.state.turn === 10) {
           this.setState({
             numberCount: 'End'
@@ -176,6 +187,7 @@ class Game extends React.Component {
           score={this.state.score}
         />
         <Result
+          isGood={this.state.wasItGoodAnswer}
           name={this.state.currentSong}
           author={this.state.currentAuthor}
           year={this.state.currentYear}

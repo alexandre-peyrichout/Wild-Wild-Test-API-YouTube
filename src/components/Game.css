@@ -372,10 +372,20 @@
   right: 5vw;
 }
 
-.result-title {
+.result-title,
+.winText,
+.lostText {
   margin: 4%;
   text-align: center;
   font-size: calc(0.5rem + 2vh);
+}
+
+.lostText {
+  color: red;
+}
+
+.winText {
+  color: green;
 }
 
 .result-datas {
