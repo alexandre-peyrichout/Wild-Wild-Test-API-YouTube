@@ -1,5 +1,4 @@
 import React from 'react';
-import Game from '../Game';
 
 class Answer extends React.Component {
   constructor(props) {
@@ -11,6 +10,7 @@ class Answer extends React.Component {
       <div>
         <label>
           <input
+            id="input-answer"
             className="input-answer"
             type="text"
             name="answer"

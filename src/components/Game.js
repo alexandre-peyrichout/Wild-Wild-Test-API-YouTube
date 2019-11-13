@@ -62,6 +62,7 @@ class Game extends React.Component {
       activeArr = Object.values(activeArr)[0];
       activeArr = activeArr[turn];
       this.setState({
+        answer: '',
         possibleAnswers: activeArr.answers,
         currentSong: activeArr.name,
         currentPic: activeArr.pic,
@@ -133,11 +134,20 @@ class Game extends React.Component {
         this.setState({ answerState: true });
         answerResult = 'YES';
         this.setState({ numberCount: 'Next' });
+        document.getElementById('input-answer').classList.add('goodAnswer');
+        setTimeout(function() {
+          document.getElementById('input-answer').classList.remove('goodAnswer');
+        }, 1000);
         return console.log(answerResult);
       } else {
       }
     }
-
+    if (this.state.answerState === false) {
+      document.getElementById('input-answer').classList.add('wrongAnswer');
+      setTimeout(function() {
+        document.getElementById('input-answer').classList.remove('wrongAnswer');
+      }, 1000);
+    }
     return console.log(answerResult);
   }
 

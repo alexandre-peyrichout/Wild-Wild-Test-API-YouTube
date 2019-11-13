@@ -28,7 +28,7 @@ export const arrThemes = [
         year: '2016',
         length: '',
         url: 'NSQZqVsaKWY',
-        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_0.jpg',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_0.jpg',
         answers: ['Jhin', 'jhin', 'khada jhin', 'Khada Jhin', 'Khada jhin', 'khada Jhin']
       },
       {
