@@ -135,7 +135,8 @@ class Game extends React.Component {
           answerState: true,
           numberCount: 'End',
           skipAnswer: false,
-          wasItGoodAnswer: false
+          wasItGoodAnswer: false,
+          classCount: 'default'
         });
         this.setState({ scoreTemp: 0 });
       } else {
@@ -143,7 +144,8 @@ class Game extends React.Component {
           answerState: true,
           numberCount: 'Next',
           skipAnswer: false,
-          wasItGoodAnswer: false
+          wasItGoodAnswer: false,
+          classCount: 'default'
         });
         this.setState({ scoreTemp: 0 });
       }
@@ -156,10 +158,11 @@ class Game extends React.Component {
         this.setState({ answerState: true, wasItGoodAnswer: true });
         if (this.state.turn === 10) {
           this.setState({
-            numberCount: 'End'
+            numberCount: 'End',
+            classCount: 'default'
           });
         } else {
-          this.setState({ numberCount: 'Next' });
+          this.setState({ numberCount: 'Next', classCount: 'default' });
         }
 
         document.getElementById('input-answer').classList.add('goodAnswer');
