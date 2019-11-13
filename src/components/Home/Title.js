@@ -8,7 +8,7 @@ export default props => {
         {props.theme === 'teenMovies'
           ? 'Teen Movies'
           : props.theme === 'wildWildWest'
-          ? 'Wild Wild Test'
+          ? 'Western Movies'
           : props.theme === 'newSeries'
           ? 'New Series'
           : props.theme === 'oldSeries'
