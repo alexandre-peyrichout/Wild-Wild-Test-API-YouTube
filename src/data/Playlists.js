@@ -4,71 +4,71 @@ export const arrThemes = [
       {
         id: 1,
         name: 'Ekko, the Boy Who Shattered Time',
-        author: '',
+        author: 'League of Legends',
         year: '2015',
         length: '',
         url: '8_OSWJeVTg0',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_0.jpg',
         answers: ['Ekko', 'ekko']
       },
       {
         id: 2,
         name: 'Pyke, the Bloodharbor Ripper',
-        author: '',
+        author: 'League of Legends',
         year: '2018',
         length: '',
         url: 'cHRvLl8hpqc',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_0.jpg',
         answers: ['Pyke', 'pyke']
       },
       {
         id: 3,
         name: 'Jhin, the Virtuoso',
-        author: '',
+        author: 'League of Legends',
         year: '2016',
         length: '',
         url: 'NSQZqVsaKWY',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_0.jpg',
         answers: ['Jhin', 'jhin', 'khada jhin', 'Khada Jhin', 'Khada jhin', 'khada Jhin']
       },
       {
         id: 4,
         name: 'Thresh, the Chain Warden',
-        author: '',
+        author: 'League of Legends',
         year: '2013',
         length: '',
         url: '6WyH5E8Xs0c',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg',
         answers: ['Thresh', 'thresh']
       },
       {
         id: 5,
         name: 'Jinx, the Loose Cannon',
-        author: '',
+        author: 'League of Legends',
         year: '2013',
         length: '',
         url: 'JoHRzfKrdtk',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg',
         answers: ['Jinx', 'jinx']
       },
       {
         id: 6,
         name: 'Kled, the Cantankerous Cavalier',
-        author: '',
+        author: 'League of Legends',
         year: '2016',
         length: '',
         url: '-P9zLHDUFEM',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kled_0.jpg',
         answers: ['Kled', 'kled']
       },
       {
         id: 7,
         name: 'Braum, the Heart of Freljord',
-        author: '',
+        author: 'League of Legends',
         year: '2016',
         length: '',
         url: 'F8cPDpXnQa0',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Braum_0.jpg',
         answers: ['Braum', 'braum']
       },
       {
@@ -78,17 +78,17 @@ export const arrThemes = [
         year: 'Draven',
         length: '',
         url: 'H1xHayXetLU',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_0.jpg',
         answers: ['Draven', 'draven', 'tyler1', 'Tyler1', 'tyler', 'Tyler']
       },
       {
         id: 9,
         name: "Rek'Sai, the Void Burrower",
-        author: '',
+        author: 'League of Legends',
         year: '2014',
         length: '',
         url: 'zXXdL4rHvww',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/RekSai_0.jpg',
         answers: [
           "Rek'Sai",
           "Rek'sai",
@@ -103,11 +103,11 @@ export const arrThemes = [
       {
         id: 10,
         name: 'Tahm Kench, the River King',
-        author: '',
+        author: 'League of Legends',
         year: '2015',
         length: '',
         url: 'lr4EqywQGTQ',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_0.jpg',
         answers: ['Tahm Kench', 'Tahm kench', 'tahm kench', 'Tahmkench', 'TahmKench', 'tahmkench']
       }
     ]
@@ -117,102 +117,128 @@ export const arrThemes = [
       {
         id: 1,
         name: 'American Pie',
-        author: '',
-        year: '',
+        author: 'Paul Weitz & Chris Weitz',
+        year: '1999',
         length: '',
-        url: '4PgNhsD5bsU?',
-        pic: '',
-        answers: []
+        url: '4PgNhsD5bsU',
+        pic: 'https://i.ytimg.com/vi/lYhneLNZRzU/hqdefault.jpg',
+        answers: ['American Pie', 'Folies de graduation', 'american pie']
       },
       {
         id: 2,
         name: 'High School Musical',
-        author: '',
-        year: '',
+        author: 'Peter Barsocchini',
+        year: '2006',
         length: '',
         url: 'dEOVNB0hXjo',
-        pic: '',
-        answers: []
+        pic: 'https://www.musicalavenue.fr/wp-content/uploads/HSMok-900x444.jpg',
+        answers: ['High School Musical', 'high school musical', 'highschoolmusical']
       },
       {
         id: 3,
         name: 'Twilight',
-        author: '',
-        year: '',
+        author: 'Catherine Hardwicke',
+        year: '2008',
         length: '',
         url: 'Z7-3_h0vxXA',
-        pic: '',
-        answers: []
+        pic:
+          'https://resize.programme-television.ladmedia.fr/r/670,670/img/var/premiere/storage/images/tele-7-jours/news-tv/twilight-chapitre-1-fascination-canal-family-etes-vous-incollable-sur-la-saga-twilight-4500917/91120661-1-fre-FR/Twilight-Chapitre-1-Fascination-Canal-Family-Etes-vous-incollable-sur-la-saga-Twilight.jpg',
+        answers: ['Twilight', 'twilight']
       },
       {
         id: 4,
         name: 'Scary Movie',
-        author: '',
-        year: '',
+        author: 'Keenen Ivory Wayans',
+        year: '2000',
         length: '',
         url: 'bYceRXYdyyI',
-        pic: '',
-        answers: []
+        pic: 'https://i.ytimg.com/vi/HTLPULt0eJ4/maxresdefault.jpg',
+        answers: ['Scary Movie', 'scary movie', 'Scary movie']
       },
       {
         id: 5,
-        name: 'Sex Intention',
-        author: '',
-        year: '',
+        name: 'Sexe Intentions',
+        author: 'Roger Kumble',
+        year: '1999',
         length: '',
         url: 'HgS0o2-ZYW4',
-        pic: '',
-        answers: []
+        pic: 'https://i.ytimg.com/vi/UzlKsS-IhEo/maxresdefault.jpg',
+        answers: [
+          'sexe intentions',
+          'Sexe Intentions',
+          'Sexe intentions',
+          'Sex intentions',
+          'Sex Intentions',
+          'cruel intentions',
+          'Cruel Intentions',
+          'Cruel intentions'
+        ]
       },
       {
         id: 6,
         name: 'Projet X',
-        author: '',
-        year: '',
+        author: 'Nima Nourizadeh',
+        year: '2012',
         length: '',
         url: 'CVFkvTKfcqk',
-        pic: '',
-        answers: []
+        pic: 'https://pbs.twimg.com/media/Dxvr__YWwAAiHMW.jpg:large',
+        answers: ['Projet X', 'Project X', 'projet x', 'projetx', 'Projet x']
       },
       {
         id: 7,
         name: 'Virgin Suicide',
-        author: '',
-        year: '',
+        author: 'Sofia Coppola',
+        year: '1999',
         length: '',
         url: 'hFuu5wPFv1M',
-        pic: '',
-        answers: []
+        pic: 'https://thumb.canalplus.pro/bddpe/unsafe/1280x720/73274337',
+        answers: [
+          'Virgin Suicides',
+          'Virgin suicide',
+          'Virgin suicides',
+          'virgin suicides',
+          'virgin suicide'
+        ]
       },
       {
         id: 8,
-        name: 'Rasta Rocket',
-        author: '',
-        year: '',
+        name: 'Rasta Rockett',
+        author: 'Jon Turteltaub',
+        year: '1993',
         length: '',
         url: 'MrHxhQPOO2c',
-        pic: '',
-        answers: []
+        pic:
+          'https://images.ladepeche.fr/api/v1/images/view/5c374c348fe56f2d4213b43c/large/image.jpg',
+        answers: [
+          'Rasta Rockett',
+          'Rasta Rocket',
+          'rasta rockett',
+          'rasta rocket',
+          'Rasta rockett',
+          'Rasta rocket'
+        ]
       },
       {
         id: 9,
         name: 'Harry Potter',
-        author: '',
-        year: '',
+        author: 'J. K. Rowling',
+        year: '2010',
         length: '',
         url: 'Htaj3o3JD8I',
-        pic: '',
-        answers: []
+        pic:
+          'https://clubdeletoile.fr/wp-content/uploads/2019/08/harrypotter-collection-1-1400x737-1024x539.jpg',
+        answers: ['Harry Potter', 'harry potter', 'Harry potter']
       },
       {
         id: 10,
         name: 'Very Bad Trip',
-        author: '',
-        year: '',
+        author: 'Todd Phillips',
+        year: '2009',
         length: '',
         url: 'CcCw1ggftuQ',
-        pic: '',
-        answers: []
+        pic:
+          'https://www.challenges.fr/assets/img/2009/06/15/cover-r4x3w1000-58353de9ac230-very-bad-trip-the-hangover-24-06-2009-05-06-2009-23-g.jpg',
+        answers: ['Very Bad Trip', 'very bad trip', 'Very bad trip']
       }
     ]
   },
@@ -343,7 +369,7 @@ export const arrThemes = [
         length: '',
         url: '2tch4J_pP9o',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 2,
@@ -353,7 +379,7 @@ export const arrThemes = [
         length: '',
         url: 'fro6je9L5kg',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 3,
@@ -363,7 +389,7 @@ export const arrThemes = [
         length: '',
         url: 'VLW1ieY4Izw',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 4,
@@ -373,7 +399,7 @@ export const arrThemes = [
         length: '',
         url: 'agV86_dFVOE',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 5,
@@ -383,7 +409,7 @@ export const arrThemes = [
         length: '',
         url: 'AyDi8kI9gp0',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 6,
@@ -393,7 +419,7 @@ export const arrThemes = [
         length: '',
         url: 'NqM032dnPtk',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 7,
@@ -403,7 +429,7 @@ export const arrThemes = [
         length: '',
         url: 'XveHckJdYvY',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 8,
@@ -413,7 +439,7 @@ export const arrThemes = [
         length: '',
         url: '3fEg1r6SH9Q',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 9,
@@ -423,7 +449,7 @@ export const arrThemes = [
         length: '',
         url: 'Ph4MUCD90Yo',
         pic: '',
-        answers: []
+        answers: ['vodka']
       },
       {
         id: 10,
@@ -433,7 +459,7 @@ export const arrThemes = [
         length: '',
         url: 'QIjKijhv1OU',
         pic: '',
-        answers: []
+        answers: ['vodka']
       }
     ]
   },

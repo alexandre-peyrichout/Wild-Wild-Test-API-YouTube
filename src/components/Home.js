@@ -14,10 +14,17 @@ class Home extends React.Component {
     super(props);
     this.state = {
       idSongs: '',
+      nickname: '',
+      nickLabel: 'Wild Wild Test',
       show: false
     };
+    
+    
+    
+  this.openModal = this.openModal.bind(this);
     this.goToPlaylist = this.goToPlaylist.bind(this);
-    this.openModal = this.openModal.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+
   }
 
   goToPlaylist(value) {
@@ -25,6 +32,7 @@ class Home extends React.Component {
       idSongs: value
     });
   }
+
 
   openModal() {
     this.setState({ show: true });
@@ -36,18 +44,29 @@ class Home extends React.Component {
     });
   };
 
+  handleChange(event) {
+    this.setState({
+      nickname: event.target.value
+    });
+  }
+
   render() {
     return (
       <div className="home">
+
         <Rules modal={this.state.show} parentMethod2={this.closeModal} />
-        <Burger />
+        <Burger nickname={this.state.nickname} />
         <RulesBtn parentMethod={this.openModal} />
+
+        
+        
+
         <Title />
         <Logo />
         <div className="home-nickname-play">
-          <NickName />
+          <NickName nickname={this.state.nickname} handleChange={this.handleChange} />
           <ChooseTheme parentMethodChoosePlaylist={this.goToPlaylist} value={this.state.idSongs} />
-          <PlayBtn theme={this.state.idSongs} />
+          <PlayBtn theme={this.state.idSongs} nickname={this.state.nickname} />
         </div>
       </div>
     );

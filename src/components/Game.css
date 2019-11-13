@@ -117,12 +117,14 @@
   text-align: center;
   font-size: calc(1rem + 1.5vw);
   color: white;
+  text-shadow: 2px 2px 3px #000;
   margin: 20px auto;
 }
 
 .default,
 .loading,
-.playing {
+.playing,
+.answered {
   display: flex;
   background-image: url(../assets/img/logo_blur.png);
   background-size: cover;
@@ -157,6 +159,10 @@
 }
 
 .loading {
+  font-size: calc(2rem + 3vh);
+}
+
+.answered {
   font-size: calc(2rem + 3vh);
 }
 
@@ -319,4 +325,112 @@
   transform: rotate(180deg);
   border-radius: 50%;
   transition-duration: 1s;
+}
+
+.result-visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  right: 5vw;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  overflow: hidden;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.result-hidden {
+  display: none;
+  position: absolute;
+  bottom: 30vh;
+  right: 5vw;
+}
+
+.result-title {
+  margin: 4%;
+  text-align: center;
+  font-size: calc(0.5rem + 2vh);
+}
+
+.result-datas {
+  text-align: left;
+  margin-left: 4%;
+  font-size: calc(1rem + 1vh);
+}
+
+.result-image {
+  max-width: 25vw;
+  border-left: 6px solid #000;
+  border-right: 6px solid #000;
+  border-top: 6px solid #000;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
+.result-appear {
+  animation: resultAppear 0.6s ease-in-out;
+}
+
+@keyframes resultAppear {
+  0% {
+    height: 0vh;
+    opacity: 0;
+  }
+  25% {
+    height: 20vh;
+    opacity: 0.7;
+  }
+  50% {
+    height: 40vh;
+    opacity: 1;
+  }
+}
+
+.wrongAnswer {
+  animation: wrongAnswer 1s infinite;
+}
+
+.goodAnswer {
+  animation: goodAnswer 1s infinite;
+}
+
+@keyframes wrongAnswer {
+  0% {
+    transform: translateX(0%);
+    color: red;
+  }
+  20% {
+    transform: translateX(2%);
+  }
+  40% {
+    transform: translateX(-2%);
+  }
+  60% {
+    transform: translateX(2%);
+  }
+  80% {
+     transform: translateX(-2%);
+  }
+  100% {
+    transform: translateX(0%);
+    color: white;
+  }
+}
+
+@keyframes goodAnswer {
+  0% {
+    transform: scale(1);
+    color: green;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  110% {
+    transform: scale(1);
+    color: white;
+  }
 }
