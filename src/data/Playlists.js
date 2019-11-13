@@ -468,102 +468,187 @@ export const arrThemes = [
       {
         id: 1,
         name: 'West World',
-        author: 'Ramin Djawadi',
-        year: '',
+        author: 'Jonathan Nolan, Lisa Joy',
+        year: '2016',
         length: '',
         url: '3et63xTh2bE',
-        pic: '',
-        answers: []
+        pic: 'https://i.blogs.es/2ee02c/westworld-season-2/450_1000.jpg',
+        answers: [
+          'WEST WORLD',
+          'WEST WORLD',
+          'WEST WORLDS',
+          'WESTWORLDS',
+          'West World',
+          'West world',
+          'west world',
+          'west World',
+          'Westworld',
+          'westworld',
+          'West-World',
+          'West-world',
+          'west-world',
+          'west-World'
+        ]
       },
       {
         id: 2,
         name: 'Vikings',
-        author: 'Fever Heart',
-        year: '',
+        author: 'Michael Hirst',
+        year: '2013',
         length: '',
         url: 'gmyCRJkKeKs',
-        pic: '',
-        answers: []
+        pic: 'https://static0.srcdn.com/wordpress/wp-content/uploads/2019/03/vikings-poster.jpg',
+        answers: ['Vikings', 'vikings', 'Viking', 'viking', 'VIKINGS', 'VIKING']
       },
       {
         id: 3,
         name: 'Game of Thrones',
-        author: 'Ramin Djawadi',
-        year: '',
+        author: 'David Benioff, D. B. Weiss, George R. R. Martin',
+        year: '2011',
         length: '',
         url: 'D3z12372SkI',
-        pic: '',
-        answers: []
+        pic: 'http://golem13.fr/wp-content/uploads/2019/02/GameofThrones8-20-posters.jpg',
+        answers: [
+          'GAME OF THRONES',
+          'Game Of Thrones',
+          'Game of Thrones',
+          'Game of thrones',
+          'game of thrones',
+          'GOT',
+          'Got',
+          'got',
+          'game of Thrones',
+          'GAME OF THRONE',
+          'Game Of Throne',
+          'Game of Throne',
+          'Game of throne',
+          'game of throne'
+        ]
       },
       {
         id: 4,
         name: 'American Horror Story',
-        author: '',
-        year: '',
+        author: 'Ryan Murphy, Brad Falchuk',
+        year: '2011',
         length: '',
         url: 'GC954KG8sBM',
-        pic: '',
-        answers: []
+        pic: 'https://www.tvinsider.com/wp-content/uploads/2018/11/AHS8-coven-2-1014x570.jpg',
+        answers: [
+          'American Horror Story',
+          'American horror story',
+          'american horror story',
+          'American Horror story',
+          'american Horror Story',
+          'AMERICAN HORROR STORY',
+          'AMERICAN HORROR',
+          'American Horror',
+          'american horror',
+          'American Horrors Story',
+          'American horrors story',
+          'AMERICAN HORRORS STORY',
+          'AMERICAN HORROR'
+        ]
       },
       {
         id: 5,
         name: 'Narcos',
-        author: '',
-        year: '',
+        author: 'Chris Brancato, Carlo Bernard, Doug Miro',
+        year: '2015',
         length: '',
         url: 'PtJ6yAGjsIs',
-        pic: '',
-        answers: []
+        pic: 'https://img.bfmtv.com/c/1000/600/e4f/c3b5819ccb58a92c2179512bfbbcb.jpeg',
+        answers: ['NARCOS', 'Narcos', 'narcos']
       },
       {
         id: 6,
         name: 'The Walking Dead',
-        author: '',
-        year: '',
+        author: '	Frank Darabont, Robert Kirkman',
+        year: '2011',
         length: '',
         url: 'v5ISBJc1wFk',
-        pic: '',
-        answers: []
+        pic: 'https://actusmedias.com/wp-content/uploads/2019/03/the-walking-dead-s2-740x416.jpg',
+        answers: [
+          'THE WALKING DEAD',
+          'The Walking Dead',
+          'the walking dead',
+          'WALKING DEAD',
+          'Walking Dead',
+          'walking dead'
+        ]
       },
       {
         id: 7,
         name: 'Orange is the New Black',
-        author: '',
-        year: '',
+        author: '	Jenji Kohan',
+        year: '2011',
         length: '',
         url: 'fBITGyJynfA',
-        pic: '',
-        answers: []
+        pic:
+          'https://i0.wp.com/programme-tv.info/wp-content/uploads/orange-is-the-new-black-saison-7.jpg?fit=1140%2C558&ssl=1',
+        answers: [
+          'ORANGE IS THE NEW BLACK',
+          'orange is the new black',
+          'Orange is the new black',
+          'orange',
+          'ORANGE',
+          'OITNB',
+          'oitnb'
+        ]
       },
       {
         id: 8,
         name: 'La Casa de Papel',
-        author: '',
-        year: '',
+        author: 'Álex Pina',
+        year: '2017',
         length: '',
         url: 'j4fMyFUJgfA',
-        pic: '',
-        answers: []
+        pic:
+          'https://blog.ariase.com/hubfs/Ariase/Ariase-blog-dossiers/Streaming%20Vid%C3%A9o/casa-de-papel-saison-3-19-juillet-netflix.jpg',
+        answers: [
+          'LA CASA DE PAPEL',
+          'La casa de papel',
+          'la casa de papel',
+          'La Casa De Papel',
+          'CASA DE PAPEL',
+          'casa de papel',
+          'Casa De Papel',
+          'Casa de Papel',
+          'Casa de papel'
+        ]
       },
       {
         id: 9,
         name: 'Stranger Things',
-        author: '',
-        year: '',
+        author: 'Les frères Duffer',
+        year: '2016',
         length: '',
         url: '-RcPZdihrp4',
-        pic: '',
-        answers: []
+        pic:
+          'https://www.courrierinternational.com/sites/ci_master/files/styles/image_original_1280/public/assets/images/stranger_things_0.jpg?itok=8V6F29yj',
+        answers: [
+          'Stranger Things',
+          'Stranger things',
+          'stranger things',
+          'STRANGER THINGS',
+          'stranger things'
+        ]
       },
       {
         id: 10,
         name: 'Peaky Blinders',
-        author: '',
-        year: '',
+        author: 'Steven Knight',
+        year: '2013',
         length: '',
         url: 'Be56k1Ui2Yg',
-        pic: '',
-        answers: []
+        pic: 'http://fr.web.img3.acsta.net/r_640_360/newsv7/19/04/26/10/30/1181474.jpg',
+        answers: [
+          'Peaky Blinders',
+          'Peaky blinders',
+          'peaky blinders',
+          'Peaky Blinder',
+          'Peaky blinder',
+          'peaky blinder'
+        ]
       }
     ]
   },
@@ -572,102 +657,154 @@ export const arrThemes = [
       {
         id: 1,
         name: 'Buffy',
-        author: '',
-        year: '',
+        author: 'Joss Whedon',
+        year: '1997',
         length: '',
         url: '1LT7m5lu_Zg',
-        pic: '',
-        answers: []
+        pic:
+          'https://cdn.vox-cdn.com/thumbor/rFoyaRG4Mt_8kQOO6kgx0Mf2uqI=/0x0:900x506/1200x800/filters:focal(369x109:513x253)/cdn.vox-cdn.com/uploads/chorus_image/image/62602780/8.0.jpg',
+        answers: [
+          'BUFFY',
+          'Buffy',
+          'buffy',
+          'Buffy contre les vampires',
+          'buffy contre les vampires',
+          'BUFFY CONTRE LES VAMPIRES'
+        ]
       },
       {
         id: 2,
-        name: "Dawson's Creek",
-        author: '',
-        year: '',
+        name: 'Dawson',
+        author: '	Kevin Williamson',
+        year: '1998',
         length: '',
         url: '8iagmMy7JEE',
-        pic: '',
-        answers: []
+        pic:
+          'https://resize.programme-television.ladmedia.fr/r/670,670/img/var/premiere/storage/images/tele-7-jours/news-tv/dawson-ou-sont-joey-pacey-et-les-autres-aujourd-hui-le-createur-repond-4557110/94010552-1-fre-FR/Dawson-Ou-sont-Joey-Pacey-et-les-autres-aujourd-hui-Le-createur-repond.jpg',
+        answers: ['DAWSON', 'Dawson', 'dawson']
       },
       {
         id: 3,
         name: 'Friends',
-        author: '',
-        year: '',
+        author: '	Marta Kauffman, David Crane',
+        year: '1994',
         length: '',
         url: 'jRP5mpZVmN8',
-        pic: '',
-        answers: []
+        pic:
+          'https://cdn-media.rtl.fr/cache/viI0VvlKtuGoCUNWiIxIlQ/880v587-0/online/image/2019/1015/7799251059_le-casting-de-friends-il-y-a-25-ans.jpg',
+        answers: ['FRIENDS', 'Friends', 'friends']
       },
       {
         id: 4,
-        name: 'The Fresh Prince of Bel Air',
-        author: '',
-        year: '',
+        name: 'Le Prince de Bel Air',
+        author: 'Andy Borowitz, Susan Borowitz',
+        year: '1990',
         length: '',
         url: 'OPVqumgVSlY',
-        pic: '',
-        answers: []
+        pic:
+          'https://img.filmsactu.net/datas/seriestv/l/e/le-prince-de-bel-air/xl/le-prince-de-bel-air-5da49d7b17d45.jpg',
+        answers: [
+          'LE PRINCE DE BEL AIR',
+          'Le Prince De Bel Air',
+          'Le prince de bel air',
+          'le prince de bel air'
+        ]
       },
       {
         id: 5,
         name: 'Beverly Hills',
-        author: '',
-        year: '',
+        author: '	Darren Star',
+        year: '1990',
         length: '',
         url: 'iY-IFU9LFkY',
-        pic: '',
-        answers: []
+        pic:
+          'http://www.leparisien.fr/resizer/H52ewnb7_0NaItepFOSDM671Hwk=/932x582/arc-anglerfish-eu-central-1-prod-leparisien.s3.amazonaws.com/public/BEE53YAXPHTRGQ7CWAJBFAG334.jpg',
+        answers: [
+          'BEVERLY HILLS',
+          'Beverly Hills',
+          'Beverly hills',
+          'beverly hills',
+          'BEVERLY HILL',
+          'Beverly Hill',
+          'Beverly hill',
+          'beverly hill'
+        ]
       },
       {
         id: 6,
         name: 'Smallville',
-        author: '',
-        year: '',
+        author: '	Alfred Gough, Miles Millar',
+        year: '2001',
         length: '',
         url: '_c04c0nZLDo',
-        pic: '',
-        answers: []
+        pic: 'https://streamondemandathome.com/wp-content/uploads/2016/10/Smallvillepromo.jpg',
+        answers: [
+          'SMALLVILLE',
+          'Smallville',
+          'smallville',
+          'SMALL VILLE',
+          'Small ville',
+          'small ville',
+          'Small Ville'
+        ]
       },
       {
         id: 7,
         name: 'Charmed',
-        author: '',
-        year: '',
+        author: 'Constance M. Burge, Aaron Spelling',
+        year: '1998',
         length: '',
         url: 'OVoERU5W3Hs',
-        pic: '',
-        answers: []
+        pic:
+          'https://cdn-media.rtl.fr/cache/K8pWWjapDZxxNT31v1kXfQ/880v587-0/online/image/2018/1008/7795097340_le-trio-originel-de-charmed.jpg',
+        answers: ['Charmed', 'CHARMED', 'charmed']
       },
       {
         id: 8,
         name: 'X-Files',
-        author: '',
-        year: '',
+        author: '	Chris Carter',
+        year: '1993',
         length: '',
         url: 'teibLCzIx6g',
-        pic: '',
-        answers: []
+        pic:
+          'https://www.tvinsider.com/wp-content/uploads/2018/09/GettyImages-669384616-1014x570.jpg',
+        answers: [
+          'X-FILES',
+          'X-Files',
+          'X-files',
+          'x-files',
+          'X FILES',
+          'X Files',
+          'X files',
+          'x files'
+        ]
       },
       {
         id: 9,
         name: 'Dark Angel',
-        author: '',
-        year: '',
+        author: 'James Cameron, Charles H. Eglee',
+        year: '2000',
         length: '',
         url: 'a1sY3OkmvXs',
-        pic: '',
-        answers: []
+        pic: 'https://medias.spotern.com/spots/w640/60/60473-1532336916.jpg',
+        answers: ['DARK ANGEL', 'Dark Angel', 'Dark angel', 'dark angel']
       },
       {
         id: 10,
         name: 'The Big Bang Theory',
-        author: '',
-        year: '',
+        author: '	Chuck Lorre, Bill Prady',
+        year: '2007',
         length: '',
         url: 'EhoYKLIcTLM',
-        pic: '',
-        answers: []
+        pic: 'https://www.bfmtv.com/i/0/0/377/16619fbce9a200f9f33aef7f2cbb5.jpeg',
+        answers: [
+          'THE BIG BANG THEORY',
+          'The Big Bang Theory',
+          'The big bang theory',
+          'BIG BANG THEORY',
+          'Big Bang Theory',
+          'big bang theory'
+        ]
       }
     ]
   },
