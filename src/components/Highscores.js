@@ -49,52 +49,52 @@ class Highscores extends React.Component {
             <ul className="Score-List">
               <li className="Score-List-Element">
                 <span className="Score-List-Player">Chuck Norris</span>
-                <span className="Score-List-Score">10000</span>
+                <span className="Score-List-Score">300</span>
               </li>
 
               <li className="Score-List-Element">
                 <span className="Score-List-Player">CowBoy666</span>
-                <span className="Score-List-Score">274</span>
+                <span className="Score-List-Score">294</span>
               </li>
 
               <li className="Score-List-Element">
                 <span className="Score-List-Player">Chloe</span>
-                <span className="Score-List-Score">268</span>
+                <span className="Score-List-Score">292</span>
               </li>
 
               <li className="Score-List-Element">
                 <span className="Score-List-Player">David</span>
-                <span className="Score-List-Score">264</span>
+                <span className="Score-List-Score">290</span>
               </li>
 
               <li className="Score-List-Element">
                 <span className="Score-List-Player">Baptiste</span>
-                <span className="Score-List-Score">262</span>
+                <span className="Score-List-Score">289</span>
               </li>
 
               <li className="Score-List-Element">
                 <span className="Score-List-Player">Clement</span>
-                <span className="Score-List-Score">259</span>
+                <span className="Score-List-Score">288</span>
               </li>
 
               <li className="Score-List-Element">
                 <span className="Score-List-Player">Alex</span>
-                <span className="Score-List-Score">257</span>
+                <span className="Score-List-Score">287</span>
               </li>
 
               <li className="Score-List-Element">
                 <span className="Score-List-Player">Kenny</span>
-                <span className="Score-List-Score">249</span>
+                <span className="Score-List-Score">285</span>
               </li>
 
               <li className="Score-List-Element">
                 <span className="Score-List-Player">SugarDaddy</span>
-                <span className="Score-List-Score">248</span>
+                <span className="Score-List-Score">285</span>
               </li>
 
               <li className="Score-List-Element">
                 <span className="Score-List-Player">JCVD</span>
-                <span className="Score-List-Score">247</span>
+                <span className="Score-List-Score">284</span>
               </li>
             </ul>
           </div>
