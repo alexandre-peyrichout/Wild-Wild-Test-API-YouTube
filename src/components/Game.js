@@ -57,7 +57,7 @@ class Game extends React.Component {
 
   changeSong() {
     if (this.state.numberCount === 'End') {
-      this.setState({ isGameOver: true });
+      this.setState({ isGameOver: true, answerState: false });
     }
 
     if (this.state.numberCount === 'Go' || this.state.numberCount === 'Next') {
