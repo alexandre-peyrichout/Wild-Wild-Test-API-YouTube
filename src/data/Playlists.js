@@ -365,101 +365,185 @@ export const arrThemes = [
         id: 1,
         name: 'Gopnik',
         author: 'DJ Blyatman',
-        year: '',
+        year: '2017',
         length: '',
         url: '2tch4J_pP9o',
-        pic: '',
-        answers: ['vodka']
+        pic: 'https://media.giphy.com/media/245rAxg7TnVN1Nj75U/giphy.gif',
+        answers: ['vodka', 'Vodka', 'gopnik', 'Gopnik', 'GOPNIK', 'gopnic', 'Gopnic', 'GOPNIC']
       },
       {
         id: 2,
         name: 'Narkotik Kal',
         author: 'Hard Bass School',
-        year: '',
+        year: '2011',
         length: '',
         url: 'fro6je9L5kg',
-        pic: '',
-        answers: ['vodka']
+        pic: 'https://media.tenor.com/images/6ad39d4da4990af07243edf823986126/tenor.gif',
+        answers: [
+          'vodka',
+          'Vodka',
+          'narkotik kal',
+          'Narkotik Kal',
+          'Narkotik kal',
+          'narcotical',
+          'Narcotical',
+          'Narkotical',
+          'narkotical',
+          'NARKOTIK KAL'
+        ]
       },
       {
         id: 3,
         name: 'Bochka, Bass, Kolbaser',
         author: 'XS Project',
-        year: '',
+        year: '2016',
         length: '',
         url: 'VLW1ieY4Izw',
-        pic: '',
-        answers: ['vodka']
+        pic: 'https://i.makeagif.com/media/8-29-2015/z7AhyC.gif',
+        answers: [
+          'vodka',
+          'Vodka',
+          'Bochka bass kolbaser',
+          'Bochka Bass Kolbaser',
+          'bochka bass kolbaser',
+          'bochka',
+          'Bochka',
+          'bass',
+          'Bass',
+          'kolbaser',
+          'Kolbaser',
+          'BBK',
+          'BOCHKA BASS KOLBASER'
+        ]
       },
       {
         id: 4,
         name: 'How We Party',
         author: 'DJ Blyatman & XS Project',
-        year: '',
+        year: '2018',
         length: '',
         url: 'agV86_dFVOE',
-        pic: '',
-        answers: ['vodka']
+        pic: 'https://thumbs.gfycat.com/ScornfulJealousGalapagospenguin-size_restricted.gif',
+        answers: [
+          'vodka',
+          'Vodka',
+          'how we party',
+          'How we party',
+          'How We party',
+          'How We Party',
+          'russian party',
+          'Russian party',
+          'Russian Party',
+          'HOW WE PARTY'
+        ]
       },
       {
         id: 5,
         name: 'Meanwhile in Russia (Take me to Russia)',
         author: 'XS Project',
-        year: '',
+        year: '2017',
         length: '',
         url: 'AyDi8kI9gp0',
-        pic: '',
-        answers: ['vodka']
+        pic: 'https://media.giphy.com/media/WhCE8ISHIsu6k/giphy.gif',
+        answers: [
+          'vodka',
+          'Vodka',
+          'meanwhile in russia',
+          'Meanwhile in russia',
+          'Meanwhile In russia',
+          'Meanwhile In Russia',
+          'take me to russia',
+          'Take me to russia',
+          'Take Me to russia',
+          'Take Me To russia',
+          'Take Me To Russia'
+        ]
       },
       {
         id: 6,
         name: 'Cyka Blyat',
         author: 'DJ Blyatman & Russian Village Boys',
-        year: '',
+        year: '2018',
         length: '',
         url: 'NqM032dnPtk',
-        pic: '',
-        answers: ['vodka']
+        pic:
+          'https://steamuserimages-a.akamaihd.net/ugc/101724518986852523/AD02891DFEA68C6D53E7272E055F92725498136B/',
+        answers: [
+          'vodka',
+          'Vodka',
+          'cyka blyat',
+          'Cyka blyat',
+          'Cyka Blyat',
+          'suka bleat',
+          'Suka bleat',
+          'Suka Bleat',
+          'Suka blyat',
+          'Suka Blyat',
+          'suka blyat',
+          'CYKA BLYAT'
+        ]
       },
       {
         id: 7,
         name: 'Opa Blia',
         author: 'Hard Bass School',
-        year: '',
+        year: '2011',
         length: '',
         url: 'XveHckJdYvY',
-        pic: '',
-        answers: ['vodka']
+        pic: 'https://media.giphy.com/media/fimSo3swmb0Ixn38e0/giphy.gif',
+        answers: [
+          'vodka',
+          'Vodka',
+          'opa blia',
+          'Opa blia',
+          'Opa Blia',
+          'opa blyat',
+          'Opa blyat',
+          'Opa Blyat',
+          'OPA BLIA'
+        ]
       },
       {
         id: 8,
         name: 'Louder',
         author: 'XS Project',
-        year: '',
+        year: '2017',
         length: '',
         url: '3fEg1r6SH9Q',
-        pic: '',
-        answers: ['vodka']
+        pic: 'https://thumbs.gfycat.com/SecondaryAngryEmu-size_restricted.gif',
+        answers: ['vodka', 'Vodka', 'louder', 'Louder', 'LOUDER']
       },
       {
         id: 9,
         name: 'Generation Hardbass',
         author: 'Boris vs. DJ Blyatman',
-        year: '',
+        year: '2018',
         length: '',
         url: 'Ph4MUCD90Yo',
-        pic: '',
-        answers: ['vodka']
+        pic: 'https://media.giphy.com/media/KZhlL3C53N4EU/giphy.gif',
+        answers: [
+          'vodka',
+          'Vodka',
+          'generation hardbass',
+          'génération hardbass',
+          'Generation hardbass',
+          'Génération hardbass',
+          'Generation Hardbass',
+          'Génération Hardbass',
+          'hardbass',
+          'Hardbass',
+          'GENERATION HARDBASS'
+        ]
       },
       {
         id: 10,
         name: 'SLAV KING',
         author: 'Boris VS. DJ Blyatman',
-        year: '',
+        year: '2017',
         length: '',
         url: 'QIjKijhv1OU',
-        pic: '',
-        answers: ['vodka']
+        pic: 'http://giphygifs.s3.amazonaws.com/media/11qtISVa1F9bUs/giphy.gif',
+        answers: ['vodka', 'Vodka', 'slav king', 'Slav king', 'Slav King', 'SLAV KING']
       }
     ]
   },
