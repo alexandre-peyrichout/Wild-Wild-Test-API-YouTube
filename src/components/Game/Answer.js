@@ -1,6 +1,12 @@
 import React from 'react';
 
 class Answer extends React.Component {
+  pressEnter(event) {
+    if (event.key === 'Enter') {
+      this.props.onKeyPressed();
+    }
+  }
+
   render() {
     return (
       <div>
@@ -13,6 +19,8 @@ class Answer extends React.Component {
             value={this.props.parentAnswer}
             onChange={this.props.parentMethodAnswer}
             placeholder="Write your answer here"
+            onKeyDown={event => this.pressEnter(event)}
+            tabIndex="0"
           />
         </label>
       </div>

@@ -126,6 +126,7 @@ class Game extends React.Component {
   }
 
   handleChange(event) {
+    console.log(event);
     this.setState({ answer: event.target.value });
     console.log(this.state.answer);
   }
@@ -206,7 +207,11 @@ class Game extends React.Component {
         </div>
 
         <div className="landscape-mode">
-          <Answer parentMethodAnswer={this.handleChange} parentAnswer={this.state.answer} />
+          <Answer
+            parentMethodAnswer={this.handleChange}
+            parentAnswer={this.state.answer}
+            onKeyPressed={this.handleSubmit}
+          />
 
           <div className="row">
             <SkipBtn parentMethodSkip={this.handleSkip} />
