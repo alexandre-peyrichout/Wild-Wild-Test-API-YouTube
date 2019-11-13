@@ -147,7 +147,7 @@
 
 .default,
 .playing {
-  font-size: calc(5rem + 3vh);
+  font-size: calc(3rem + 3vh);
 }
 
 .playing {
