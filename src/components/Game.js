@@ -31,7 +31,9 @@ class Game extends React.Component {
       },
       answer: '',
       possibleAnswers: [],
-      answerState: false
+      answerState: false,
+      scoreTemp: 0,
+      score: 0
     };
     this.changeSong = this.changeSong.bind(this);
     this._onPlay = this._onPlay.bind(this);
@@ -48,6 +50,7 @@ class Game extends React.Component {
   changeSong() {
     if (this.state.numberCount === 'Go') {
       this.setState({ answerState: false, turn: this.state.turn + 1 });
+
       const { theme, turn } = this.state;
       let activeArr = arrThemes.filter(el => theme === Object.keys(el)[0]);
       activeArr = activeArr[0];
@@ -90,6 +93,7 @@ class Game extends React.Component {
     if (this.state.answerState === true) {
       clearInterval(this.timerID);
       this.setState({ classCount: 'default' });
+      this.setState({ score: this.state.scoreTemp + this.state.score });
     } else {
       this.state.isPlaying // si le props startCount défini dans Game.js...
         ? this.state.numberCount <= 1 || this.state.numberCount === 'cry' // true : si le state number est inférieur ou égal à 0...
@@ -98,6 +102,8 @@ class Game extends React.Component {
             }) // true : ne pas toucher
           : this.setState({ numberCount: this.state.numberCount - 1 }) // false : nombre - 1
         : this.setState({ numberCount: this.state.numberCount });
+      console.log('handleScore: ' + this.state.score);
+      this.setState({ scoreTemp: this.state.numberCount });
     } // false : ne pas toucher
   }
 
@@ -122,10 +128,12 @@ class Game extends React.Component {
       } else {
       }
     }
+
     return console.log(answerResult);
   }
 
   render() {
+    // console.log(this.state.score)
     return (
       <div className={this.state.class_parent}>
         <Title theme={this.state.theme} />
@@ -157,7 +165,7 @@ class Game extends React.Component {
 
         <p className="nick">{this.props.match.params.nickname}</p>
 
-        <Score />
+        <Score transferScore={this.state.score} transferAnswerState={this.state.answerState} />
 
         <YouTube
           className="yt-hidden"
