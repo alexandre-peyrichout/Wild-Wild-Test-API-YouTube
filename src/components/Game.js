@@ -5,6 +5,7 @@ import Score from './Game/Score';
 import SkipBtn from './Game/SkipBtn';
 import Answer from './Game/Answer';
 import ValidateBtn from './Game/ValidateBtn';
+import Result from './Game/Result';
 import './Game.css';
 import Title from './Home/Title';
 import { arrThemes } from '../data/Playlists';
@@ -31,7 +32,12 @@ class Game extends React.Component {
       },
       answer: '',
       possibleAnswers: [],
-      answerState: false
+      answerState: false,
+
+      currentSong: '',
+      currentPic: '',
+      currentAuthor: '',
+      currentYear: ''
     };
     this.changeSong = this.changeSong.bind(this);
     this._onPlay = this._onPlay.bind(this);
@@ -46,15 +52,20 @@ class Game extends React.Component {
   }
 
   changeSong() {
-    if (this.state.numberCount === 'Go') {
+    if (this.state.numberCount === 'Go' || this.state.numberCount === 'Next') {
       this.setState({ answerState: false, turn: this.state.turn + 1 });
       const { theme, turn } = this.state;
       let activeArr = arrThemes.filter(el => theme === Object.keys(el)[0]);
       activeArr = activeArr[0];
       activeArr = Object.values(activeArr)[0];
       activeArr = activeArr[turn];
-      this.setState({ possibleAnswers: activeArr.answers });
-      console.log(activeArr.answers);
+      this.setState({
+        possibleAnswers: activeArr.answers,
+        currentSong: activeArr.name,
+        currentPic: activeArr.pic,
+        currentAuthor: activeArr.author,
+        currentYear: activeArr.year
+      });
       // activeArr.map(child => console.log(child));
 
       this.setState({
@@ -89,7 +100,7 @@ class Game extends React.Component {
   tick() {
     if (this.state.answerState === true) {
       clearInterval(this.timerID);
-      this.setState({ classCount: 'default' });
+      this.setState({ classCount: 'answered' });
     } else {
       this.state.isPlaying // si le props startCount défini dans Game.js...
         ? this.state.numberCount <= 1 || this.state.numberCount === 'cry' // true : si le state number est inférieur ou égal à 0...
@@ -107,7 +118,7 @@ class Game extends React.Component {
   }
 
   handleSkip(event) {
-    this.setState({ answerState: true, numberCount: 'Go' });
+    this.setState({ answerState: true, numberCount: 'Next' });
   }
 
   handleSubmit(event) {
@@ -116,8 +127,7 @@ class Game extends React.Component {
       if (this.state.answer === this.state.possibleAnswers[i]) {
         this.setState({ answerState: true });
         answerResult = 'YES';
-        this.setState({ numberCount: 'Go' });
-
+        this.setState({ numberCount: 'Next' });
         return console.log(answerResult);
       } else {
       }
@@ -130,6 +140,14 @@ class Game extends React.Component {
     return (
       <div className={this.state.class_parent}>
         <Title />
+
+        <Result
+          name={this.state.currentSong}
+          author={this.state.currentAuthor}
+          year={this.state.currentYear}
+          picture={this.state.currentPic}
+          toggle={this.state.answerState}
+        />
 
         <div className="fake-div-parent">
           {/*fake divs importantes pour l'anim du loading*/}

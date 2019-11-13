@@ -4,71 +4,71 @@ export const arrThemes = [
       {
         id: 1,
         name: 'Ekko, the Boy Who Shattered Time',
-        author: '',
+        author: 'League of Legends',
         year: '2015',
         length: '',
         url: '8_OSWJeVTg0',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_0.jpg',
         answers: ['Ekko', 'ekko']
       },
       {
         id: 2,
         name: 'Pyke, the Bloodharbor Ripper',
-        author: '',
+        author: 'League of Legends',
         year: '2018',
         length: '',
         url: 'cHRvLl8hpqc',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_0.jpg',
         answers: ['Pyke', 'pyke']
       },
       {
         id: 3,
         name: 'Jhin, the Virtuoso',
-        author: '',
+        author: 'League of Legends',
         year: '2016',
         length: '',
         url: 'NSQZqVsaKWY',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_0.jpg',
         answers: ['Jhin', 'jhin', 'khada jhin', 'Khada Jhin', 'Khada jhin', 'khada Jhin']
       },
       {
         id: 4,
         name: 'Thresh, the Chain Warden',
-        author: '',
+        author: 'League of Legends',
         year: '2013',
         length: '',
         url: '6WyH5E8Xs0c',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg',
         answers: ['Thresh', 'thresh']
       },
       {
         id: 5,
         name: 'Jinx, the Loose Cannon',
-        author: '',
+        author: 'League of Legends',
         year: '2013',
         length: '',
         url: 'JoHRzfKrdtk',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg',
         answers: ['Jinx', 'jinx']
       },
       {
         id: 6,
         name: 'Kled, the Cantankerous Cavalier',
-        author: '',
+        author: 'League of Legends',
         year: '2016',
         length: '',
         url: '-P9zLHDUFEM',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kled_0.jpg',
         answers: ['Kled', 'kled']
       },
       {
         id: 7,
         name: 'Braum, the Heart of Freljord',
-        author: '',
+        author: 'League of Legends',
         year: '2016',
         length: '',
         url: 'F8cPDpXnQa0',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Braum_0.jpg',
         answers: ['Braum', 'braum']
       },
       {
@@ -78,17 +78,17 @@ export const arrThemes = [
         year: 'Draven',
         length: '',
         url: 'H1xHayXetLU',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_0.jpg',
         answers: ['Draven', 'draven', 'tyler1', 'Tyler1', 'tyler', 'Tyler']
       },
       {
         id: 9,
         name: "Rek'Sai, the Void Burrower",
-        author: '',
+        author: 'League of Legends',
         year: '2014',
         length: '',
         url: 'zXXdL4rHvww',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/RekSai_0.jpg',
         answers: [
           "Rek'Sai",
           "Rek'sai",
@@ -103,11 +103,11 @@ export const arrThemes = [
       {
         id: 10,
         name: 'Tahm Kench, the River King',
-        author: '',
+        author: 'League of Legends',
         year: '2015',
         length: '',
         url: 'lr4EqywQGTQ',
-        pic: '',
+        pic: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_0.jpg',
         answers: ['Tahm Kench', 'Tahm kench', 'tahm kench', 'Tahmkench', 'TahmKench', 'tahmkench']
       }
     ]
