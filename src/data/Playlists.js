@@ -698,7 +698,9 @@ export const arrThemes = [
           'pirates des caraïbes',
           'Pirates des Caraïbes',
           'pirates of the caribbean',
-          'Pirates of the Caribbean'
+          'Pirates of the Caribbean',
+          'Pirate des caraibes',
+          'pirate des caraibes'
         ]
       },
       {
@@ -737,7 +739,17 @@ export const arrThemes = [
         length: '',
         url: 'w9u21s1wuok',
         pic: 'https://img2.thejournal.ie/inline/3675483/original/?width=630&version=3675483',
-        answers: ['le roi lion', 'Le Roi Lion', "l'histoire de la vie", "L'Histoire de la vie"]
+        answers: [
+          'le roi lion',
+          'Le Roi Lion',
+          "l'histoire de la vie",
+          "L'Histoire de la vie",
+          'Lion King',
+          'lion king',
+          'roi lion',
+          'Roi lion',
+          'Roi Lion'
+        ]
       },
       {
         id: 6,
@@ -752,7 +764,9 @@ export const arrThemes = [
           'le seigneur des anneaux',
           'Le Seigneur des Anneaux',
           'Lord of the Rings',
-          'Le seigneur des anneaux'
+          'Le seigneur des anneaux',
+          'Seigneur des anneaux',
+          'seigneur des anneaux'
         ]
       },
       {
