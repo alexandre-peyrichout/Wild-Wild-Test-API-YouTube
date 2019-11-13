@@ -127,7 +127,11 @@ class Game extends React.Component {
   }
 
   handleSkip(event) {
-    if (this.state.numberCount === 'Next' || this.state.turn === 0) {
+    if (
+      this.state.numberCount === 'Next' ||
+      this.state.numberCount === 'Loading' ||
+      this.state.turn === 0
+    ) {
       return;
     } else {
       if (this.state.turn === 10) {
