@@ -38,7 +38,8 @@ class Game extends React.Component {
       currentSong: '',
       currentPic: '',
       currentAuthor: '',
-      currentYear: ''
+      currentYear: '',
+      skipAnswer: false
     };
     this.changeSong = this.changeSong.bind(this);
     this._onPlay = this._onPlay.bind(this);
@@ -124,7 +125,8 @@ class Game extends React.Component {
   }
 
   handleSkip(event) {
-    this.setState({ answerState: true, numberCount: 'Next' });
+    this.setState({ answerState: true, numberCount: 'Next', skipAnswer: false });
+    this.setState({ scoreTemp: 0 });
   }
 
   handleSubmit(event) {
@@ -193,6 +195,7 @@ class Game extends React.Component {
         <p className="nick">{this.props.match.params.nickname}</p>
 
         <Score
+          transferSkipAnswer={this.state.skipAnswer}
           transferScore={this.state.score}
           transferAnswerState={this.state.answerState}
           transferTurnSong={this.state.turn}
