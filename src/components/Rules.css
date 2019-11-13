@@ -1,35 +1,40 @@
 .Rule {
-  height: 100vh;
   background-size: cover;
-  margin: 0;
-  padding-top: 8vh;
+
+  position: absolute;
+  z-index: 1000;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .Rule-box {
+  height: 80vh;
   width: 70%;
   min-width: 290px;
   background: #232524;
-  border-radius: 50px;
-  border: solid 4px #f0efef;
-  opacity: 0.8;
+  border-radius: 15px;
+  border: solid 2px #f0af32;
+  opacity: 0.98;
   font-family: 'Varela Round', regular;
   font-weight: 150;
   margin: auto;
 }
 
 .Rule-Title {
-  font-size: calc(0.666rem + 1.666vw);
-  color: #f0efef;
+  font-size: calc(0.666rem + 3.666vw);
+  color: #f0af32;
   text-align: center;
-  font-family: 'Varela Round', regular;
-  font-weight: 150;
+  font-family: 'Ultra', regular;
 }
 
-.Rule-box li {
-  margin: 10px;
+.Rule-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   color: #f0efef;
-  text-align: left;
+  text-align: center;
   font-size: calc(0.666rem + 0.666vw);
   padding: 3%;
 }
@@ -37,4 +42,36 @@
 ul.Rule-modal-body {
   list-style-type: none;
   padding: 0px;
+}
+
+.Rule-text-phrase {
+  font-size: calc(0.666rem + 0.666vw);
+  color: #f0af32;
+}
+
+.yellow {
+  color: #f0af32;
+}
+
+.Rule-button {
+  border-radius: 20px;
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+  margin-left: 10px;
+  color: white;
+  font-size: calc(0.666rem + 0.666vw);
+}
+
+.Rule-button:hover {
+  cursor: pointer;
+  color: rgb(19, 252, 19);
+  border: solid 1px rgb(18, 252, 19);
+}
+
+.Rule-button:active {
+  cursor: pointer;
+  color: rgb(18, 252, 19);
+  border: solid 1px rgb(19, 252, 19);
 }

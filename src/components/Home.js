@@ -7,14 +7,17 @@ import ChooseTheme from './Home/ChooseTheme';
 import Burger from './Burger';
 import PlayBtn from './Home/PlayBtn';
 import RulesBtn from './Home/RulesBtn';
+import Rules from './Rules';
 
 class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      idSongs: ''
+      idSongs: '',
+      show: false
     };
     this.goToPlaylist = this.goToPlaylist.bind(this);
+    this.openModal = this.openModal.bind(this);
   }
 
   goToPlaylist(value) {
@@ -23,11 +26,22 @@ class Home extends React.Component {
     });
   }
 
+  openModal() {
+    this.setState({ show: true });
+  }
+
+  closeModal = () => {
+    this.setState({
+      show: false
+    });
+  };
+
   render() {
     return (
       <div className="home">
+        <Rules modal={this.state.show} parentMethod2={this.closeModal} />
         <Burger />
-        <RulesBtn />
+        <RulesBtn parentMethod={this.openModal} />
         <Title />
         <Logo />
         <div className="home-nickname-play">
