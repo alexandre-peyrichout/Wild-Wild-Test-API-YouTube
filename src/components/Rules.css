@@ -62,16 +62,17 @@ ul.Rule-modal-body {
   margin-left: 10px;
   color: white;
   font-size: calc(0.666rem + 0.666vw);
+  border: solid 1px #f0af32;
 }
 
 .Rule-button:hover {
   cursor: pointer;
-  color: rgb(19, 252, 19);
-  border: solid 1px rgb(18, 252, 19);
+  color: green;
+  border: solid 1px rgb(0, 155, 0);
 }
 
 .Rule-button:active {
   cursor: pointer;
-  color: rgb(18, 252, 19);
-  border: solid 1px rgb(19, 252, 19);
+  color: green;
+  border: solid 1px green;
 }
