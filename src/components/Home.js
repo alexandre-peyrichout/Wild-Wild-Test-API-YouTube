@@ -7,6 +7,7 @@ import ChooseTheme from './Home/ChooseTheme';
 import Burger from './Burger';
 import PlayBtn from './Home/PlayBtn';
 import RulesBtn from './Home/RulesBtn';
+import Rules from './Rules';
 
 class Home extends React.Component {
   constructor(props) {
@@ -14,10 +15,16 @@ class Home extends React.Component {
     this.state = {
       idSongs: '',
       nickname: '',
-      nickLabel: 'Wild Wild Test'
+      nickLabel: 'Wild Wild Test',
+      show: false
     };
+    
+    
+    
+  this.openModal = this.openModal.bind(this);
     this.goToPlaylist = this.goToPlaylist.bind(this);
     this.handleChange = this.handleChange.bind(this);
+
   }
 
   goToPlaylist(value) {
@@ -25,6 +32,17 @@ class Home extends React.Component {
       idSongs: value
     });
   }
+
+
+  openModal() {
+    this.setState({ show: true });
+  }
+
+  closeModal = () => {
+    this.setState({
+      show: false
+    });
+  };
 
   handleChange(event) {
     this.setState({
@@ -35,8 +53,14 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home">
+
+        <Rules modal={this.state.show} parentMethod2={this.closeModal} />
         <Burger nickname={this.state.nickname} />
-        <RulesBtn />
+        <RulesBtn parentMethod={this.openModal} />
+
+        
+        
+
         <Title />
         <Logo />
         <div className="home-nickname-play">

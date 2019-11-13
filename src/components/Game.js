@@ -38,7 +38,8 @@ class Game extends React.Component {
       currentSong: '',
       currentPic: '',
       currentAuthor: '',
-      currentYear: ''
+      currentYear: '',
+      skipAnswer: false
     };
     this.changeSong = this.changeSong.bind(this);
     this._onPlay = this._onPlay.bind(this);
@@ -78,6 +79,7 @@ class Game extends React.Component {
         classCount: 'loading'
       });
     }
+    console.log(this.state.turn);
   }
 
   _onReady(event) {
@@ -104,7 +106,7 @@ class Game extends React.Component {
     if (this.state.answerState === true) {
       clearInterval(this.timerID);
       this.setState({ classCount: 'default' });
-      this.setState({ score: this.state.scoreTemp + this.state.score });
+      this.setState({ score: this.state.scoreTemp + this.state.score }); //cumulation du score
     } else {
       this.state.isPlaying // si le props startCount défini dans Game.js...
         ? this.state.numberCount <= 1 || this.state.numberCount === 'cry' // true : si le state number est inférieur ou égal à 0...
@@ -113,8 +115,7 @@ class Game extends React.Component {
             }) // true : ne pas toucher
           : this.setState({ numberCount: this.state.numberCount - 1 }) // false : nombre - 1
         : this.setState({ numberCount: this.state.numberCount });
-      console.log('handleScore: ' + this.state.score);
-      this.setState({ scoreTemp: this.state.numberCount });
+      this.setState({ scoreTemp: parseInt(this.state.numberCount) || 0 }); //memorise le compteur pour le score et mets 0 si string au lieu de number
     } // false : ne pas toucher
   }
 
@@ -124,7 +125,8 @@ class Game extends React.Component {
   }
 
   handleSkip(event) {
-    this.setState({ answerState: true, numberCount: 'Next' });
+    this.setState({ answerState: true, numberCount: 'Next', skipAnswer: false });
+    this.setState({ scoreTemp: 0 });
   }
 
   handleSubmit(event) {
@@ -192,7 +194,12 @@ class Game extends React.Component {
 
         <p className="nick">{this.props.match.params.nickname}</p>
 
-        <Score transferScore={this.state.score} transferAnswerState={this.state.answerState} />
+        <Score
+          transferSkipAnswer={this.state.skipAnswer}
+          transferScore={this.state.score}
+          transferAnswerState={this.state.answerState}
+          transferTurnSong={this.state.turn}
+        />
 
         <YouTube
           className="yt-hidden"

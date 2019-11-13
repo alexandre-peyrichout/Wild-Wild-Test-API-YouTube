@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Score.css';
 
 class Score extends React.Component {
@@ -8,8 +8,11 @@ class Score extends React.Component {
 
   render() {
     return (
-      <div class={this.props.transferAnswerState ? 'ball spring' : 'ball'}>
-        <p className="score">Score: {this.props.transferScore} </p>
+      <div className="score-show">
+        <div className={this.props.transferAnswerState ? 'ball spring' : 'ball'}>
+          <p>Score: {this.props.transferScore} </p>
+        </div>
+        <p className="score-tracks-number">Turn {this.props.transferTurnSong} / 10</p>
       </div>
     );
   }

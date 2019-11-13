@@ -1,11 +1,22 @@
+.score-tracks-number,
 .ball {
-  margin: 1px auto 0;
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+}
+
+.ball {
+  margin: 1px auto;
+  width: 20%;
 }
 
 .spring {
-  animation: spring 1.5s;
+  animation: spring 2s;
   animation-timing-function: ease;
   animation-iteration-count: 1;
+}
+
+.score-tracks-number {
+  margin-top: 2%;
 }
 
 @keyframes spring {
