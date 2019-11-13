@@ -180,7 +180,11 @@ class Game extends React.Component {
     return (
       <div className={this.state.class_parent}>
         <Title theme={this.state.theme} />
-        <EndGame toggleEnd={this.state.isGameOver} />
+        <EndGame
+          toggleEnd={this.state.isGameOver}
+          nickname={this.props.match.params.nickname}
+          score={this.state.score}
+        />
         <Result
           name={this.state.currentSong}
           author={this.state.currentAuthor}
