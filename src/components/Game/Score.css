@@ -1,7 +1,7 @@
 .score-tracks-number,
 .ball {
-  font-family: 'Varela Round', sans-serif;
-  color: white;
+  font-family: 'Ultra', regular;
+  color: rgb(255, 255, 255);
 }
 
 .ball {
@@ -17,6 +17,11 @@
 
 .score-tracks-number {
   margin-top: 2%;
+}
+
+.label-score {
+  color: lightgrey;
+  margin-right: 10px;
 }
 
 @keyframes spring {
