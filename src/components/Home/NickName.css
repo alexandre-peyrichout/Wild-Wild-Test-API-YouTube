@@ -3,12 +3,11 @@ form,
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-family: 'Varela Round', regular;
 }
 #name {
   background: transparent;
-  font-family: 'Varela Round', sans-serif;
-  font-size: calc(1rem + 0.3vh);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: calc(1.4rem + 0.3vh);
   font-weight: 150;
 }
 
