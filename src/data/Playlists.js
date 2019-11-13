@@ -186,7 +186,7 @@ export const arrThemes = [
       },
       {
         id: 7,
-        name: 'Virgin Suicide',
+        name: 'Virgin Suicides',
         author: 'Sofia Coppola',
         year: '1999',
         length: '',
@@ -1041,7 +1041,7 @@ export const arrThemes = [
         author: 'John Williams',
         year: '1993',
         length: '',
-        url: 'D8zlUUrFK-M&t=154',
+        url: 'D8zlUUrFK-M',
         pic: 'https://images-na.ssl-images-amazon.com/images/I/513L7EVljEL._SX466_.jpg',
         answers: ['jurassic park', 'Jurassic Park', 'jurassicpark', 'JurassicPark']
       }
