@@ -25,7 +25,7 @@ class Game extends React.Component {
       opts: {
         playerVars: {
           autoplay: 1,
-          start: 0,
+          start: 5,
           enablejsapi: 1,
           origin: 'http://localhost:3000'
         }

@@ -679,7 +679,7 @@ export const arrThemes = [
         author: 'John Williams',
         year: '1977',
         length: '',
-        url: '_D0ZQPqeJkk#t=15',
+        url: '_D0ZQPqeJkk',
         pic:
           'https://lh3.googleusercontent.com/8o1EHNh--H1mSVOPp_gXNqh86Xuf5UdgAnLd-kTNcUoMCYapY-uqCh268KtshWa-6qr6=w720-h405-rw',
         answers: ['starwars', 'StarWars', 'Star Wars', 'star wars']

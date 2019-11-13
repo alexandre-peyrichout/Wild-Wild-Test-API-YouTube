@@ -15,6 +15,8 @@ export default props => {
           ? 'Old Series'
           : props.theme === 'hardBass'
           ? 'Hard Bass'
+          : props.theme === 'classics'
+          ? 'Classic Movies & Series'
           : props.theme === 'leagueChampions'
           ? 'League Champions'
           : 'Wild Wild Test'}
