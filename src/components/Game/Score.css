@@ -1,7 +1,7 @@
 .score-tracks-number,
 .ball {
   font-family: 'Ultra', regular;
-  color: rgb(255, 255, 255);
+  color: #6c9caf;
 }
 
 .ball {
@@ -17,6 +17,10 @@
 
 .score-tracks-number {
   margin-top: 2%;
+}
+
+.white-turn {
+  color: white;
 }
 
 .label-score {

@@ -2,10 +2,6 @@ import React from 'react';
 import './Score.css';
 
 class Score extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="score-show">
@@ -17,7 +13,8 @@ class Score extends React.Component {
         </div>
         <p className="score-tracks-number">
           <span className="label-score">Turn: </span>
-          {this.props.transferTurnSong} / 10
+          {this.props.transferTurnSong}
+          <span className="label-score"> / 10</span>
         </p>
       </div>
     );
