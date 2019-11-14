@@ -993,20 +993,14 @@ export const arrThemes = [
       },
       {
         id: 7,
-        name: "Harry Potter - Hedwig's Theme",
-        author: 'John Williams',
-        year: '2001',
+        name: 'Titanic - My Heart Will Go On (Flute)',
+        author: 'Matt Mulholland',
+        year: '2010',
         length: '',
-        url: 'Htaj3o3JD8I',
-        pic: 'https://www.focusur.fr/wp-content/uploads/2019/09/harry-potter-personnage-.jpg',
-        answers: [
-          'harry potter',
-          'HarryPotter',
-          'harrypotter',
-          'Harry Potter',
-          'Henri Podbeurre',
-          'henri podbeurre'
-        ]
+        url: 'X2WH8mHJnhM',
+        pic:
+          'http://a69.g.akamai.net/n/69/10688/v1/img5.allocine.fr/acmedia/medias/nmedia/18/93/90/65/20285022.jpg',
+        answers: ['Titanic', 'titanic', 'titanique', 'TiTaNiC', 'TITANIC']
       },
       {
         id: 8,
