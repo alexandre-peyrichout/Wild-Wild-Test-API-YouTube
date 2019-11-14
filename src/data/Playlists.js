@@ -1033,13 +1033,14 @@ export const arrThemes = [
       },
       {
         id: 10,
-        name: 'Jurassic Park',
-        author: 'John Williams',
-        year: '1993',
+        name: 'Rocky - Gonna Fly Now',
+        author: 'Rocky Orchestra',
+        year: '1976',
         length: '',
-        url: 'D8zlUUrFK-M',
-        pic: 'https://images-na.ssl-images-amazon.com/images/I/513L7EVljEL._SX466_.jpg',
-        answers: ['jurassic park', 'Jurassic Park', 'jurassicpark', 'JurassicPark']
+        url: 'DhlPAj38rHc',
+        pic:
+          'https://images.amcnetworks.com/ifc.com/wp-content/uploads/2016/08/Rocky-IV-Flag-e1471646081155-800x400.jpg',
+        answers: ['rocky', 'Rocky', 'ROCKY']
       }
     ]
   }
