@@ -531,3 +531,7 @@
   border: solid 2px rgb(19, 252, 19);
   box-shadow: none;
 }
+
+.finalscore {
+  color: rgb(218, 98, 1);
+}
