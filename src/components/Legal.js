@@ -1,6 +1,7 @@
 import React from 'react';
 import './legal.css';
 import Title from './Home/Title';
+import { Link } from 'react-router-dom';
 
 class Legal extends React.Component {
   render() {
@@ -50,6 +51,11 @@ class Legal extends React.Component {
             utile. n'est en aucun cas responsable de l'utilisation faite de ces informations, et de
             tout préjudice direct ou indirect pouvant en découler.
           </p>
+          <div>
+            <Link to="/">
+              <button className="end-game-button">Back</button>
+            </Link>
+          </div>
         </div>
       </div>
     );

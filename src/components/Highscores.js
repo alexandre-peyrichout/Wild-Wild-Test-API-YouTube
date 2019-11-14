@@ -1,5 +1,6 @@
 import React from 'react';
 import './Highscores.css';
+import { Link } from 'react-router-dom';
 
 class Highscores extends React.Component {
   componentDidMount() {
@@ -97,6 +98,11 @@ class Highscores extends React.Component {
                 <span className="Score-List-Score">284</span>
               </li>
             </ul>
+            <div>
+              <Link to="/">
+                <button className="end-game-button">Back</button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
