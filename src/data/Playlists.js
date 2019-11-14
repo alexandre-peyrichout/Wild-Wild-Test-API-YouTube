@@ -1010,20 +1010,21 @@ export const arrThemes = [
       },
       {
         id: 8,
-        name: 'Ghostbusters',
-        author: 'Ray Parker Jr.',
-        year: '1984',
+        name: 'Old Boy - Jo Yeong Wook',
+        author: 'Cho Young Wuk',
+        year: 'Comment ça vous connaissez pas ?',
         length: '',
-        url: 'm9We2XsVZfc',
-        pic: 'https://m.media-amazon.com/images/I/61ztrQFQB8L._SS500_.jpg',
+        url: '2XerHnOIEiU',
+        pic: 'https://static.mmzstatic.com/wp-content/uploads/2018/06/old-boy-coree-critique.jpeg',
         answers: [
-          'Ghostbusters',
-          'ghostbusters',
-          'sos fantomes',
-          'SOS Fantômes',
-          'SOS fantômes',
-          'SOS fantomes',
-          'S.O.S. Fantômes'
+          'Old Boy',
+          'old boy',
+          'oldboy',
+          'OldBoy',
+          'old Boy',
+          'OLD BOY',
+          'OLDBOY',
+          '올드보이'
         ]
       },
       {
