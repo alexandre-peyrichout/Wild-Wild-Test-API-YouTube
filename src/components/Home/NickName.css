@@ -23,3 +23,7 @@ form,
   color: white;
   margin: 20px auto;
 }
+
+.NickName::placeholder {
+  color: lightgrey;
+}
