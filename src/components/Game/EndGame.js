@@ -11,12 +11,12 @@ class EndGame extends React.Component {
         <p className="end-game-score">
           Your scored <span className="finalscore">{this.props.score}</span> points !
         </p>
-        <div className="end-game-button">
+        <div>
           <Link to="/">
-            <button>HOME</button>
+            <button className="end-game-button">Home</button>
           </Link>
           <Link to="/Highscores">
-            <button>SCORES</button>
+            <button className="end-game-button">Scores</button>
           </Link>
         </div>
       </div>
