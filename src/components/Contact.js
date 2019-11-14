@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 class Contact extends React.Component {
   render() {
     return (
-      <div class="container-form">
-        <div class="contactform">
+      <div className="container-form">
+        <div className="contactform">
           <img src={logo} alt="logo" />
           <p>
             Hi {this.props.match.params.nickname ? this.props.match.params.nickname : 'guest'},
