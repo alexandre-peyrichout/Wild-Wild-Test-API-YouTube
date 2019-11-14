@@ -252,7 +252,7 @@ export const arrThemes = [
         year: '1965',
         length: '',
         url: 'HjjDOdaFZg0',
-        pic: '',
+        pic: 'https://bostonhassle.com/wp-content/uploads/2015/09/fistful-2-edit-1024x435.jpg',
         answers: [
           'pour une poignée de dollars',
           'pour une poignee de dollars',
@@ -266,7 +266,8 @@ export const arrThemes = [
         year: '1966',
         length: '',
         url: 'LdLQf1Ef9Ns',
-        pic: '',
+        pic:
+          'https://filmforum.org/do-not-enter-or-modify-or-erase/client-uploads/_1000w/clint-eastwood-the-good-the-bad-the-ugly-slide-1.jpg',
         answers: [
           'the good, the bad and the ugly',
           'the good the bad and the ugly',
@@ -281,7 +282,8 @@ export const arrThemes = [
         year: '',
         length: '',
         url: 'IAooXLAPoBQ',
-        pic: '',
+        pic:
+          'https://cdn.radiofrance.fr/s3/cruiser-production/2019/05/a95741a1-43db-4235-9537-25d5e91dfc59/801x410_django_unchained.jpg',
         answers: ['django', 'django unchained']
       },
       {
@@ -291,7 +293,8 @@ export const arrThemes = [
         year: '',
         length: '',
         url: 'm6BQKFs3-VM',
-        pic: '',
+        pic:
+          'http://img.over-blog-kiwi.com/1/58/91/76/20170204/ob_8e0fa9_il-etait-une-fois-dans-l-ouest.png',
         answers: [
           'once upon a time in the west',
           "il était une fois dans l'ouest",
@@ -305,7 +308,7 @@ export const arrThemes = [
         year: '',
         length: '',
         url: 'J84FPJAb7rM',
-        pic: '',
+        pic: 'https://i.ytimg.com/vi/M-k_BW8iLkk/maxresdefault.jpg',
         answers: ['for a few dollars more', 'et pour quelques dollars de plus']
       },
       {
@@ -315,7 +318,7 @@ export const arrThemes = [
         year: '',
         length: '',
         url: 'HsXnH0ly1S4',
-        pic: '',
+        pic: 'https://medias.liberation.fr/photo/264071-rango.jpg?modified_at=1300875376',
         answers: ['rango']
       },
       {
@@ -325,7 +328,8 @@ export const arrThemes = [
         year: '',
         length: '',
         url: 'q_xaTxzfEZk',
-        pic: '',
+        pic:
+          'https://images.amcnetworks.com/blogs.amctv.com/wp-content/uploads/2013/04/rawhide-560.jpg',
         answers: ['rawhide']
       },
       {
@@ -335,7 +339,7 @@ export const arrThemes = [
         year: '',
         length: '',
         url: 'iGZDKuDl3jc',
-        pic: '',
+        pic: 'https://medias.spotern.com/spots/w640/8/8175-1532336916.jpg',
         answers: ['my name is nobody', 'mon nom est personne']
       },
       {
@@ -345,7 +349,8 @@ export const arrThemes = [
         year: '',
         length: '',
         url: '0qzMsJ-tmJY',
-        pic: '',
+        pic:
+          'https://i1.wp.com/www.oswegonian.com/wp-content/uploads/2018/03/Movieclips-Trailer-Vault.png?resize=715%2C400&ssl=1',
         answers: ['brokeback mountain', 'the wings']
       },
       {
@@ -355,7 +360,8 @@ export const arrThemes = [
         year: '',
         length: '',
         url: 'rYelEUVQ50g',
-        pic: '',
+        pic:
+          'https://www.movienewsnet.com/wp-content/uploads/2018/05/Dolores-and-armed-masked-men.jpg',
         answers: ['westworld']
       }
     ]
